@@ -14,7 +14,7 @@ body {
 }
 
 body.noScroll{
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .rotate_image{
