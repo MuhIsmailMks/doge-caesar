@@ -182,7 +182,7 @@ body.noScroll{
         -o-transform: translateY(100%) scaleX(-1);
     }
       50% {
-        left: calc(40% - 50px);
+        left: calc(60% - 50px);
         transform: translateY(0%) scaleX(-1);
         -webkit-transform: translateY(0%) scaleX(-1);
         -moz-transform: translateY(0%) scaleX(-1);
