@@ -43,7 +43,60 @@ body.noScroll{
   -o-transform: rotate(360deg);
 }
 
-.btn_gradient { 
+
+.button_animation .moving-color_container{
+  width: 100%;
+}
+
+
+.moving-color_container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
+  clip-path:inherit;
+  background-color: #fff;
+  
+  z-index: 9;
+  overflow: hidden;
+}
+
+.moving-color {
+  width: 100%;
+  height: 290%; 
+  right: 0; 
+  position: absolute; 
+  bottom: 0%; 
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; 
+}
+
+.moving-color span{
+  width: 20%;
+  height: 100%;
+  background-color: #000000;
+  position: absolute;
+  animation: move-colors 4s linear infinite;
+  right: 100%;
+  -webkit-animation: move-colors 4s linear infinite;
+}
+
+@keyframes move-colors {
+  0% {
+      right: -50%;
+  }
+  100% {
+      right: 101%;
+  }  
+}
+
+
+/* .btn_gradient { 
   background: linear-gradient(
     70deg,
     #ecc613,
@@ -65,7 +118,7 @@ body.noScroll{
   100% {
     background-position: 100% 100%;
   }
-}
+} */
  
 .swiper-container {
     width: 100%;
