@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // copy address
 
 const copyAddress = document.querySelector('.copy-box');
-    
+{/* <p>$BRAINLET:</p>  */}
 let text = document.querySelector('.copy-box__text');
 let btn = document.querySelector('.copy-box__btn');
 let btnText = btn.textContent;
