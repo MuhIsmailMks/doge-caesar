@@ -1,7 +1,7 @@
 
-AOS.init({
-  once: true
-});
+// AOS.init({
+//   once: true
+// });
 // pop up
 const popUp = document.querySelector('.pop-up_container');
 const audioElement = document.getElementById('background-music');
