@@ -22,7 +22,7 @@
 <body class="noScroll"> 
 
     <!-- pop up -->
-     <div class="pop-up_container fixed w-full h-full  bg-white z-50 flex justify-center items-center cursor-cell shake">
+     <div class="pop-up_container hidden fixed w-full h-full  bg-white z-50 flex justify-center items-center cursor-cell shake">
         <div class="text-center leading-[1]">
             <h1 class="text-[#14ec00] text-[11vw] xl:text-[5vw] font-bold" >Insert</h1>
             <h1 class="text-[4vw] xl:text-[1.5vw]">(Click Anywhere)</h1>
@@ -126,7 +126,7 @@
          </a>
 
          <!-- images --> 
-          <div class="row mt-[5rem]"> 
+          <!-- <div class="row mt-[5rem] hidden"> 
            <div class="column  ">
             <img src="./static/media/br_image01.png" alt="" class="w-[33.33%] h-auto"> 
             <img src="./static/media/br_image02.png" alt="" class="w-[33.33%] h-auto"> 
@@ -158,7 +158,84 @@
                 <img src="./static/media/br_image20.png" alt="" class="w-[33.33%] h-auto"> 
                 <img src="./static/media/br_image21.png" alt="" class="w-[33.33%] h-auto"> 
             </div> 
-          </div> 
+          </div>  -->
+
+          <div class="card_container  max-w-[2000px]  mx-auto my-[2rem] flex-wrap">
+
+            <div class="cards_random max-lg:relative mx-auto max-lg:w-[50%] bg-[#c9c9c9]">
+              <div class="random random_card_btn  flex justify-center items-center">
+                <h1 class="text-[30px] font-bold">Random Card</h1>
+              </div>
+            </div>
+      
+            <div class="cards_container">
+ 
+              <div class="cards_container_slide">
+                  
+                <div class="card _1 about_card" data-set="./static/media/br_image01.png"> 
+                <!-- <div class="about_card" data-set="./static/media/br_image01.png">  </div> -->
+
+                    <div class="card-inner">
+                    <div class="card-front">
+                      <h2>OPEN</h2>
+                    </div>
+                    <div class="card-back">
+                      <img src="./static/media/br_image01.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card _2 about_card" data-set="./static/media/br_image02.png"> 
+                 <!-- <div class="about_card" data-set="./static/media/br_image02.png">    </div> -->
+
+                    <div class="card-inner">
+                    <div class="card-front">
+                      <h2>OPEN</h2>
+                    </div>
+                    <div class="card-back">
+                      <img src="./static/media/br_image02.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card _3 about_card" data-set="./static/media/br_image03.png"> 
+                 <!-- <div class="about_card" data-set="./static/media/br_image03.png">    </div> -->
+
+                    <div class="card-inner">
+                    <div class="card-front">
+                      <h2>OPEN</h2>
+                    </div>
+                    <div class="card-back">
+                      <img src="./static/media/br_image03.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="card _4 about_card"  data-set="./static/media/br_image04.png"> 
+                 <!-- <div class="about_card" data-set="./static/media/br_image04.png">  </div> -->
+
+                    <div class="card-inner">
+                    <div class="card-front">
+                      <h2>OPEN</h2>
+                    </div>
+                    <div class="card-back">
+                      <img src="./static/media/br_image04.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+       
+            <div class="popUp_image hidden w-auto h-auto fixed flex justify-center items-center  left-[50%] top-[50%] translate-x-[-50%] translate-y-[-50%] z-[999] max-lg:w-[90%]">
+                <img src="./static/media/br_image03.png" alt="" class="w-[100vw] xl:w-[35vw] max-h-[90vh] h-auto object-contain border-black border-[2px] relative image_popUp"> 
+
+                <div class="close_popUp w-[60px] h-[60px] rounded-full absolute border-black border-[2px] bg-white right-[-20px] top-[-20px] cursor-pointer flex justify-center items-center">
+                    <img src="./static/media/close.svg" alt="" class="w-[70%] h-auto object-contain ">
+                </div>
+            </div>
+      
+          </div>
   
 
          <!-- footer -->
