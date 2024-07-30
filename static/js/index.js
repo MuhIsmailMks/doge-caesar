@@ -34,23 +34,32 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
 
+  
+// copy address
 
-  // const images = document.querySelectorAll('.column img');
- 
-  // images.forEach((img, index) => {
-  //     img.setAttribute('data-aos', 'zoom-in');
-  //     img.setAttribute('data-aos-duration', '700');
-       
-  //     let delay = 200 + (index * 10); 
-  //     img.setAttribute('data-aos-delay', delay);
-  // });
+const copyAddress = document.querySelector('.copy-box');
+    
+let text = document.querySelector('.copy-box__text');
+let btn = document.querySelector('.copy-box__btn');
+let btnText = btn.textContent;
+let timeout;
+
+copyAddress.addEventListener('click', () => { 
+    navigator.clipboard.writeText(text.textContent).then(function () {
+        btn.textContent = 'Copied';
+
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            btn.textContent = btnText;
+        }, 2000);
+    }).catch(function (err) {
+        console.error('Failed to copy text: ', err);
+    });
+    
+})
 
 
-
-
-
-
-
+// memes
 const randomBtn = document.querySelector(".cards_random");
 const cards = document.querySelectorAll(".card .card-inner"); 
 const imageCards = document.querySelectorAll(".card .card-back");
