@@ -118,10 +118,12 @@ body.noScroll{
 
   /* animation */
 
-  .car{
-    animation:left_car 3s linear forwards;
-    -webkit-animation:left_car 3s linear forwards;
-} 
+  .car {
+    animation: left_car 3s cubic-bezier(0.97, -0.02, 1, 0.74) forwards;
+    -webkit-animation: left_car 3s cubic-bezier(0.97, -0.02, 1, 0.74) forwards;
+  } 
+
+
   @keyframes left_car {
     0%{
       transform: translateX(0vw);
@@ -129,14 +131,14 @@ body.noScroll{
       -moz-transform: translateX(0vw);
       -ms-transform: translateX(0vw);
       -o-transform: translateX(0vw);
-  } 
-    100%{
-      transform: translateX(20vw);
-      -webkit-transform: translateX(20vw);
-      -moz-transform: translateX(20vw);
-      -ms-transform: translateX(20vw);
-      -o-transform: translateX(20vw);
-} 
+    }   
+      100%{
+        transform: translateX(20vw);
+        -webkit-transform: translateX(20vw);
+        -moz-transform: translateX(20vw);
+        -ms-transform: translateX(20vw);
+        -o-transform: translateX(20vw);
+    } 
    }
 
  
@@ -148,15 +150,16 @@ body.noScroll{
   }
   
   .shake {
-    animation: shake 0.5s linear infinite;
-    animation-delay: 3s; 
+    animation: shake .5s linear infinite;
+    animation-delay:  3s; 
 }  
   
-@media screen and (max-width:1000px) {
-  .car{
-    animation:left_car 3s linear forwards;
-    -webkit-animation:left_car 3s linear forwards;
-} 
+@media screen and (max-width:1200px) {
+  .car {
+    animation: left_car 3s cubic-bezier(0.97, -0.02, 1, 0.74) forwards;
+    -webkit-animation: left_car 3s cubic-bezier(0.97, -0.02, 1, 0.74) forwards;
+  } 
+  
   @keyframes left_car {
     0%{
       transform: translateX(0vw);
