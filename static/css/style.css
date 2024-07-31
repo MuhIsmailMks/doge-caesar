@@ -466,8 +466,7 @@ body.noScroll{
 }
 
 .card-inner h2{
-  font-size: 20px;
-  font-weight: bold;
+  font-size: 20px; 
 }
 
 .card-front {
@@ -510,6 +509,10 @@ body.noScroll{
     background-repeat: no-repeat;
     background-size: contain;
 } 
+
+.shadow_text{ 
+  -webkit-text-stroke: 1px black;
+}
 
 
 .card-back {
