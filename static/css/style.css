@@ -61,15 +61,20 @@ header {
   background-color: #FFF1CB;
   border: .1vw solid #242422;
   box-shadow: 1.57px 1.57px 0px 0px #3C3A3A;
-  transition: .1s ease-in;
-  -webkit-transition: .1s ease-in;
-  -moz-transition: .1s ease-in;
-  -ms-transition: .1s ease-in;
-  -o-transition: .1s ease-in; 
+  transition: .25s ease-in;
+  -webkit-transition: .25s ease-in;
+  -moz-transition: .25s ease-in;
+  -ms-transition: .25s ease-in;
+  -o-transition: .25s ease-in;
 }
 
 .socialBtn:hover{
   box-shadow: 0px 0px 0px 0px #3C3A3A;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
 }
  
 .titleHero{
