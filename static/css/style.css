@@ -15,7 +15,8 @@
 
 body {
   font-family: "Genty", sans-serif;
-  background-color: #F4E0AA;
+  background-color: #f4e0aa; 
+  color: #;
 }
 
 body::-webkit-scrollbar {
