@@ -158,3 +158,39 @@ header {
     -o-transform: scale(1.1);
   }
 }
+
+.rotateImg{
+  animation: rotateImg 1s ease-in-out infinite;
+  -webkit-animation: rotateImg 1s ease-in-out infinite;
+}
+
+@keyframes rotateImg {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+  20%{
+    transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg);
+    -ms-transform: rotate(5deg);
+    -o-transform: rotate(5deg);
+}
+  30%{
+    transform: rotate(-5deg); 
+}
+  50%{
+    transform: rotate(5deg); 
+}
+  60%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+  }
+
+}
