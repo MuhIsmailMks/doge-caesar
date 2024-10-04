@@ -24,3 +24,40 @@ copyAddress.addEventListener('click', () => {
     });
     
 })
+
+
+// video
+document.addEventListener("DOMContentLoaded", function() {
+    let videoServices = document.querySelectorAll('.video_service');
+
+    function playVideo(video) {
+        if (video.paused) {
+            video.play().catch(function(error) {
+                console.error("Video play was prevented:", error);
+            });
+        }
+    }
+ 
+    for (let video of videoServices) { 
+        video.addEventListener('play', function() {
+            video.muted = true;
+        });
+ 
+        video.addEventListener('loadeddata', function() {
+            playVideo(video);
+        });
+ 
+        video.muted = true;
+        video.controls = false;
+    }
+});
+ 
+document.addEventListener('DOMContentLoaded', function() {
+    let videos = document.querySelectorAll('.video_service');
+    videos.forEach(function(video) {
+        video.addEventListener('canplaythrough', function() {
+            video.play();
+        }, true);
+    });
+});
+
