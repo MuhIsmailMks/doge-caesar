@@ -3,269 +3,345 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="icon" type="image/png" sizes="32x32" href="./static/images/favicon.png">  
+    <link rel="icon" type="image/png" sizes="32x32" href="./static/images/logo.png">  
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
     <!-- AOS scroll effect cdn --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
     <link rel="stylesheet" href="./static/css/style.css">
-    <title>Ginkgo</title>
+    <title>Shaobing</title>
 </head>
 <body> 
 
     <div class="w-full min-h-[100vh] h-auto   max-w-[100%] relative overflow-hidden">
         
         <!-- navbar -->
-         <header class="relative left-0 top-0 w-full h-[10vw] min-h-[80px]  xl:h-[8vw] flex_center z-[99]">
+         <header class="absolute left-0 top-0 w-full h-[10vw] min-h-[80px]  xl:h-[7vw] flex_center z-[99]">
 
-            <nav class="w-[90%] lg:w-[80%] h-full flex_between">
+            <nav class="max-w-[2000px] w-[90%] lg:w-[80%] h-full flex_between">
 
                 <!-- left -->
-                 <div class="flex_center gap-[2vw]" data-aos="fade-right"
-                 data-aos-duration="800"
+                 <div class="flex_center gap-[1vw] logo" data-aos="fade-right"
+                 data-aos-duration="600"
                  data-aos-delay="100">
-                 
+                  
                     <!-- logo -->
-                    <div class="h-[14vw] lg:h-[8vw] object-contain w-[14vw] lg:w-[8vw] mb-[-6vw] max-w-[400px] bg-[#fed139] rounded-full flex_center border-[.1vw] border-black">
-                        <img loading="lazy" src="./static/images/logo.png" alt="" class="w-[70%]"  
-                        > 
-                    </div>
+                     <div class="w-auto relative">
+                        <img src="./static/images/logo.png" alt="" class="h-auto object-contain w-[50px] lg:w-[4vw] max-w-[400px] float_animation2"  
+                        >
+                     </div>
 
-                    <p class="text-[5vw] lg:text-[3vw] mb-[-2vw]">Ginkgo</p>
-
+                     <p class="LonelyFont text-[5vw] lg:text-[3vw]">SHAOBING</p>
+                     
                  </div>
 
                 <!-- right -->
-                 <div class="flex_center gap-3 lg:gap-6">
+                 <div class="flex_center gap-3 md:gap-6">
                    
+                    <!-- telegram -->
                    <div data-aos="fade-left"
-                   data-aos-duration="800"
+                   data-aos-duration="600"
                    data-aos-delay="100">
-                    <a target="_blank" href="https://x.com/" class=" hover:scale-105 flex_center rounded-full w-[36.08px] lg:w-[4vw] h-[36.08px] lg:h-[4vw] relative socialBtn">
-                        <img loading="lazy" src="./static/images/twitter.svg" alt="" class="w-[50%] h-auto object-contain">
+                    <a target="_blank" href="https://web.telegram.org" class="duration-200 hover:scale-105 flex_center rounded-md w-[40px] h-[40px] md:w-[56.08px] md:h-[56.08px] relative   border-black border-[2px] btnStyle">
+                        <img src="./static/images/telegram.png" alt="" class="w-[50%] h-auto object-contain">
                    </a>
-                   </div>
+                   </div> 
                    
+                    <!-- twitter -->
                    <div data-aos="fade-left"
-                   data-aos-duration="800"
+                   data-aos-duration="600"
                    data-aos-delay="100">
-                    <a target="_blank" href="https://web.telegram.org" class=" hover:scale-105 flex_center rounded-full w-[36.08px] lg:w-[4vw] h-[36.08px] lg:h-[4vw] relative socialBtn">
-                        <img loading="lazy" src="./static/images/telegram.svg" alt="" class="w-[50%] h-auto object-contain">
+                    <a target="_blank" href="https://x.com" class="duration-200 hover:scale-105 flex_center rounded-md w-[40px] h-[40px] md:w-[56.08px] md:h-[56.08px] relative   border-black border-[2px] btnStyle">
+                        <img src="./static/images/twitter.png" alt="" class="w-[50%] h-auto object-contain">
                    </a>
-                   </div>
+                   </div> 
                    
+                    <!-- dexscreen -->
                    <div data-aos="fade-left"
-                   data-aos-duration="800"
+                   data-aos-duration="600"
                    data-aos-delay="100">
-                    <a target="_blank" href="https://solana.com/" class=" hover:scale-105 flex_center rounded-full w-[36.08px] lg:w-[4vw] h-[36.08px] lg:h-[4vw] relative socialBtn">
-                        <img loading="lazy" src="./static/images/solana.png" alt="" class="w-[50%] h-auto object-contain">
+                    <a target="_blank" href="https://dexscreen.com" class="duration-200 hover:scale-105 flex_center rounded-md w-[40px] h-[40px] md:w-[56.08px] md:h-[56.08px] relative   border-black border-[2px] btnStyle">
+                        <img src="./static/images/dexscreenIcon.svg" alt="" class="w-[50%] h-auto object-contain">
                    </a>
-                   </div>
+                   </div> 
+ 
 
                  </div>
- 
 
             </nav>
 
          </header>
 
          <!-- hero -->
-          <section class="w-full h-auto relative flex_center mt-[-2vw]">
+          <section class="w-full relative h-[70vw] xl:h-[55vw] flex_center">
 
-            <div class="w-full h-auto relative">
-                <img loading="lazy" src="./static/images/hero_img.png" alt="hero" class="w-full h-auto object-cover zoomIn_animation" style="animation-duration: 15s;">
-            </div>
-
-            <div class="w-auto left-[10%] text-white absolute  leading-[1] titleHero float_animation" data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="100">
-                <h2 class="text-[10vw]">Ginkgo</h2>
-                <h2 class="text-[5vw]">Doge's brother</h2>
-            </div>
-
-          </section>
-
-          <!-- line border -->
-          <section class="w-full h-auto relative ">
-
-            <div class="w-full h-auto relative">
-                <img loading="lazy" src="./static/images/lines.svg" alt="hero" class="w-full h-auto object-cover">
-            </div>
-
-          </section>
+            <!-- background -->
+             <div class="w-full h-auto absolute top-0 left-0">
  
-          <!-- about -->
-        <section class="aboutContainer w-full h-[400px] md:h-[600px] lg:h-auto relative overflow-hidden flex_center flex-col max-md:pt-[15vw] max-lg:pt-[10vw] max-lg:justify-start">
+                <!-- wave -->
+                <img src="./static/images/topHero.svg" alt="heroBg" class="w-full h-auto object-cover absolute top-0 left-0 z-20">
+
+                 <!-- sun -->
+              <div class="w-[12%] absolute left-[10%] top-[0%] flex_center">
+                <img src="./static/images/sun.svg" alt="" class="w-full" data-aos="zoom-in"
+                data-aos-duration="600"
+                data-aos-delay="100">
+                <img src="./static/images/bird.svg" alt="" class="w-[50%] absolute bottom-0 right-[-10%] float_animation" >
+              </div>
+
+                <!-- langit -->
+                <img src="./static/images/topImgHero.png" alt="heroBg" class="w-full h-full object-cover">
+
+             </div>
 
             
-            <!-- content -->
-             <div class="relative lg:absolute w-[80%] lg:w-[35%] lg:right-[5%] flex_center flex-col gap-[1rem] lg:gap-[1vw] z-10 text-center lg:text-left ">
 
-                <h2 class="w-full leading-[1] text-[8vw] lg:text-[5vw]" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="200">About Ginkgo</h2>
+             <!-- background bottom -->
+             <div class="w-full h-auto bottom-0 absolute z-20">
+                <img src="./static/images/bottomHero.png" alt="heroBg" class="w-full h-auto object-cover absolute bottom-0" loading="lazy">
+             </div>
 
-                <p class="text-[3vw] lg:text-[1.4vw]" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="400">China’s National Treasure" meme coin is a cryptocurrency inspired by China's beloved symbols, likely the panda, created for humor and social media buzz without substantial intrinsic value</p>
+             <!-- center image -->
+              <div class="flex_center w-full z-10 absolute h-[50%] ">
+                
 
-                <div class="ca flex_between w-full py-[.5vw] px-[1vw] text[2vw] lg:text-[1.7vw] rounded-full border-black border-[.2vw] copy-box cursor-pointer" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="600">
+                 <div class="left-[-6%] w-[12%] flex_center absolute top-[-20%] z-0">
+                    <img src="./static/images/star.png" alt="star" class="w-full object-contain">
+                </div>
 
-                    <p>CA:</p>
+                <!-- text -->
+                 <div class="w-[50%] absolute right-[10%] lg:right-[3%]">
+                    <div class="w-full rotate-[-10deg]">
+                        <img src="./static/images/heroText.png" alt="heroText" class="w-full lg:w-[80%] object-contain" data-aos="zoom-in"
+                        data-aos-duration="600"
+                        data-aos-delay="100">
+                    </div>
+                 </div>
 
-                    <p class="value glutenFont copy-box__text">01s7dfdekx014381048482i4u1kh</p>
+                 <!-- right -->
+                  <div class="w-[20%] absolute right-[-5%] bottom-[10%] xl:bottom-[20%]">
+                    <div class="w-full shake_animation">
+                        <img src="./static/images/logo.png" alt="dogi" loading="lazy" class="rotate-[-20deg] ">
+                    </div>
+                  </div>
 
-                    <span class="w-[7%] cursor-pointer ">
-                        <img loading="lazy" src="./static/images/bxs_copy.svg" alt="copy" class="w-full">
-                    </span>
+              </div>
+              
+
+          </section>
+
+
+          <!-- marquee -->
+          <section class="w-full h-auto overflow-hidden max-w-[100%] bg-[#FFF1D5] py-2 lg:py-8 relative z-[99] marqueeContainer mt-[-1vw]">
+            <div class="marquee bordered  w-[100vw]">
+                <div class="marquee-el flex_center  lg:gap-30 w-[100vw]" > 
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain"> 
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                
+                 <img src="./static/images/marquee_text.png" alt="" class="ml-[30px] w-[34vw] lg:w-[300px] h-auto object-contain">
+                </div>   
+              </div>
+           </section>
+
+
+          <!-- about -->
+           <section class="aboutContainer w-full h-auto py-[4rem] lg:py-[6vw] bg-[#FFECC6] relative flex_center flex-wrap max-lg:flex-col-reverse lg:gap-[5vw]">
+
+            <!-- background -->
+             <div class="w-full h-full absolute z-0">
+
+                <!-- cloud -->
+                 <div class="w-[20%] absolute left-[-10%] top-[5%]">
+                    <img src="./static/images/cloud.png" alt="cloud" class="w-full object-contain float_animation">
+                 </div>
+
+                <!-- right -->
+                <img src="./static/images/aboutBg2.png" alt="about bg" class="w-[60%] h-auto absolute bottom-0 right-0 object-contain">
+
+             </div>
+
+            <!-- left -->
+            <div class="aboutContent w-[90%] lg:w-[40%] flex_center flex-col gap-4 lg:gap-[2vw] lg:items-star t max-lg:mt-[3rem] relative">
+
+                <h2 class="about_title text-[10vw] lg:text-[5vw] LonelyFont w-full max-lg:text-center">
+                    what is <br> Shaobing 
+                </h2>
+
+                <p class="text-[1em] lg:text-[1.5vw] text-[#3C3C3C]">
+                    Meet Shaobing “It’s just a puppy cat” a cute ginger “puppy cat” has gained a lot of attention on TikTok, gaining over 4m+ views on TikTok in less than three days.
+                </p>
+
+                <div class="social_container flex_center bg-[#FFF1D5] rounded-[4vw] lg:rounded-[1vw] border-black border-[.2vw] p-[3vw] lg:p-[1vw] gap-[5vw] lg:gap-[2vw]">
+                    
+                   <div class="relative">
+                     <div class="btnHover rotate-[-10deg]">
+                        <a href="https://x.com" target="_blank" class="socialBtn flex_center">
+                            <img src="./static/images/twitter.png" alt="" class="w-[50%] lg:w-[2vw] object-contain">
+                        </a>
+                     </div>
+                   </div>
+
+                      
+                   <div class="relative">
+                    <div class="btnHover rotate-[3deg]">
+                       <a href="https://telegram.org" target="_blank" class="socialBtn flex_center">
+                           <img src="./static/images/telegram2.png" alt="" class="w-[50%] lg:w-[2vw] object-contain">
+                       </a>
+                    </div>
+                  </div>
+
+                     
+                  <div class="relative">
+                    <div class="btnHover rotate-[-5deg]">
+                       <a href="#"  class="socialBtn flex_center">
+                           <img src="./static/images/social3.svg" alt="" class="w-[50%] lg:w-[2vw] object-contain">
+                       </a>
+                    </div>
+                  </div>
+
+                     
+                  <div class="relative">
+                    <div class="btnHover rotate-[5deg]">
+                       <a href="https://dexscreener.com/" target="_blank" class="socialBtn flex_center">
+                           <img src="./static/images/dexscreenIconAbout.svg" alt="" class="w-[50%] lg:w-[2vw] object-contain">
+                       </a>
+                    </div>
+                  </div>
+                     
 
                 </div>
 
-             </div>
-
-            <!-- image bg -->
-            <div class="w-full h-auto absolute max-lg:bottom-0 lg:relative">
-                <img loading="lazy" src="./static/images/aboutBg.png" alt="hero" class="w-full h-auto object-cover  animation: zoomIn_animation 5s ease-in-out infinite;" style="animation-duration: 20s;">
             </div>
 
-            <!-- PET -->
-           <div class="w-[40%] lg:w-[25%] h-auto absolute  z-10 right-0 bottom-0 lg:bottom-[-2vw]">
+            <!-- right -->
+            <div class="aboutContent  w-[90%] lg:w-[43%] flex_center gap-[2vw] flex-col relative">
 
-            <div class="relative">
+                <div class="w-[100%] flex_center">
+                    <img src="./static/images/aboutImg.png" loading="lazy" alt="ISHI about" class="w-full float_animation" style="animation-duration: 15s;">
+                </div>
 
-                <img src="./static/images/aboutImg2.png" alt="hero" class="w-full h-auto object-cover relative rotateImg">
+                <!-- contract -->
+                 <div class="w-[100%] bg-[#FFECC6] border-[.2vw] lg:border-[.13vw] border-[#FF9A00] rounded-[3vw] lg:rounded-[1vw] p-[4vw] lg:p-[1vw] mt-[-5vw] relative z-10">
+                    <p class="LonelyFont uppercase text-[#303030] text-[1rem] lg:text-[1vw]">Contract Address</p>
 
-                    <div class="socialContainer absolute w-full bottom-[-10%] flex_center z-10 h-full">
+                    <div class="w-full bg-[#FDC238] londrinaFont flex_center gap-[2vw] py-[2vw] lg:py-[1vw] rounded-[1vw] border-black border-[.15vw] mt-2 lg:mt-4">
+                        <p class="text-[1rem] lg:text-[1.5vw] text-[#1A1A1A] max-w-[80%] overflow-hidden text-ellipsis copy-box__text">ULwSJmmpxmnRfpu6BjnK6rprKXqD5jXUmPpS1FxHXFy</p>
 
-                    <div class="flex_center gap-3 lg:gap-6">
-                   
-                        <div >
-                         <a target="_blank" href="https://x.com/" class=" hover:scale-105 flex_center rounded-full w-[7vw] lg:w-[4vw] h-[7vw] lg:h-[4vw] relative socialBtn">
-                             <img loading="lazy" src="./static/images/twitter.svg" alt="" class="w-[50%] h-auto object-contain">
-                        </a>
-                        </div>
-                        
-                        <div >
-                         <a target="_blank" href="https://web.telegram.org" class=" hover:scale-105 flex_center rounded-full w-[7vw] lg:w-[4vw] h-[7vw] lg:h-[4vw] relative socialBtn">
-                             <img loading="lazy" src="./static/images/telegram.svg" alt="" class="w-[50%] h-auto object-contain">
-                        </a>
-                        </div>
-                        
-                        <div >
-                         <a target="_blank" href="https://solana.com/" class=" hover:scale-105 flex_center rounded-full w-[7vw] lg:w-[4vw] h-[7vw] lg:h-[4vw] relative socialBtn">
-                             <img loading="lazy" src="./static/images/solana.png" alt="solana" class="w-[50%] h-auto object-contain">
-                        </a>
-                        </div>
-     
-     
-                     
-     
-                      </div>
+                        <span class="w-[4%] cursor-pointer copy-box">
+                            <img src="./static/images/copy.svg" alt="" class="w-full object-contain">
+                        </span>
 
                     </div>
-
-            </div>
-
-           </div>
-
-
-        </section>
-
-          <!-- line border -->
-          <section class="w-full h-auto relative ">
-
-            <div class="w-full h-auto relative">
-                <img loading="lazy" src="./static/images/lines2.svg" alt="hero" class="w-full h-auto object-cover">
-            </div>
-
-          </section>
-
-        <!-- footer -->
-         <footer class="w-full relative h-auto flex_center flex-col pt-[3vw] max-lg:justify-end max-lg:gap-5">
-
-            <!-- bg -->
-             <div class="w-full h-auto absolute flex_between bottom-0 z-0 opacity-25">
-                <img loading="lazy" src="./static/images/bg_footer.png" alt="egg" class="w-[35%] lg:w-[21%] h-auto object-contain zoomIn_animation">
-                <img loading="lazy" src="./static/images/bg_footer.png" alt="egg" class="w-[35%] lg:w-[21%] h-auto object-contain zoomIn_animation" style="animation-delay: -2s;">
-                <img loading="lazy" src="./static/images/bg_footer.png" alt="egg" class="w-[35%] lg:w-[21%] h-auto object-contain zoomIn_animation" style="animation-delay: -3s;">
-             </div>
-
-             <div class="flex_center gap-[2vw] flex-col mb-[4vw] relative z-10">
-
-                <div class="flex_center gap-[2vw]" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="200">
-                 
-                    <!-- logo -->
-                    <div class="h-[14vw] lg:h-[8vw] object-contain w-[14vw] lg:w-[8vw] max-w-[400px] bg-[#fed139] rounded-full flex_center border-[.1vw] border-black float_animation" >
-                        <img loading="lazy" src="./static/images/logo.png" alt="" class="w-[70%]"  
-                        > 
-                    </div>
-
-                    <p class="text-[5vw] lg:text-[3vw] mb-[-2vw]">Ginkgo</p>
 
                  </div>
 
-                 <div class="ca flex_between w-full py-[.5vw] px-[1vw] text[2vw] lg:text-[1.7vw] rounded-full border-black border-[.2vw] gap-4 copy-box cursor-pointer" data-aos="fade-up"
-                 data-aos-duration="800"
-                 data-aos-delay="400">
+            </div>
 
-                    <p>CA:</p>
+           </section>
 
-                    <p class="value glutenFont copy-box__text">01s7dfdekx014381048482i4u1kh</p>
 
-                    <span class="w-[7%] cursor-pointer ">
-                        <img loading="lazy" src="./static/images/bxs_copy.svg" alt="copy" class="w-full">
-                    </span>
+           <!-- footer -->
+            <footer class="relative w-full flex_center h-[90vw] lg:h-[40vh] xl:h-[60vh] bg-[#FDC238] lg:min-h-[500px] pb-[50vw] lg:pt-[5vw] lg:pb-[5vw] overflow-hidden">
+             
+                <h2 class="absolute opacity-30 text-white titleFooter text-[17vw]  LonelyFont">SHOABING</h2>
 
+                <div class="w-[30%] relative flex_center xl:pb-[5vw]">
+
+                    <div class="w-[40%] absolute z-10">
+                        <img src="./static/images/logo.png" alt="ISHI" class="w-full float_animation">
+                    </div>
+
+                    <div class="w-full relative">
+                        <img src="./static/images/bgImgFooter.svg" alt="footer" class="w-full object-contain rotate_img">
+                    </div>
                 </div>
 
-             </div>
+                <!-- disclaimer -->
+                 <div class="disclaimer absolute bottom-0 left-0 w-full h-auto lg:h-[30%] xl:h-[40%] min-[1500px]:h-[50%] flex_center max-lg:py-[5vw]">
 
-             <div class="disclaimer w-full h-auto md:h-[8vw] relative flex_between px-[5vw] z-10 max-md:flex-col max-md:py-[1rem]">
+                    <!-- bg -->
+                     <div class="w-full absolute bottom-[2vw] lg:bottom-0 left-0 flex_center">
+                        <img src="./static/images/cloudFooter.png" alt="footer" class="w-full h-auto object-contain cloudFooter zoomIn_animation">
+                     </div>
 
-                <p class="relative z-10 glutenFont text-[.75em] lg:text-[1.3vw]">© popo 2024 - All Rights Reserved </p>
+                    <!-- content -->
+                    <div class="relative z-10 w-full flex_between h-full  items-end px-[10vw] pb-[2vw] max-lg:flex-col max-lg:items-center max-lg:pt-[20vw] max-lg:gap-4" data-aos="fade-up"
+                    data-aos-duration="600"
+                    data-aos-delay="100"
+                    >
 
-                <div class="flex_center gap-3 lg:gap-6 relative z-10">
+                        <div class="w-[90%] lg:w-[50%] text-[#353535] max-lg:text-center">
+                            <h2 class="text-[2rem] lg:text-[1.4vw]">DISCLAIMER </h2>
+                            <p class="text-[2vw] lg:text-[.75vw]">
+
+                                Shaobing \ is a meme coin created for fun with absolutely no intrinsic value or any expectation of financial return. The token for entertainment purposes only and we take zero responsibility for the value of this token. Don’t risk money if you’re not prepared to lose investment. The price can rise or fall. We are not responsible for the token's price movements.</p>
+                        </div>
+
+                        <div class="flex_center gap-3 md:gap-6 relative z-10">
                    
-                    <div >
-                     <a target="_blank" href="https://x.com/" class=" hover:scale-105 flex_center rounded-full w-[10vw] lg:w-[4vw] h-[10vw] lg:h-[4vw] relative socialBtn">
-                         <img loading="lazy" src="./static/images/twitter.svg" alt="" class="w-[50%] h-auto object-contain">
-                    </a>
-                    </div>
-                    
-                    <div >
-                     <a target="_blank" href="https://web.telegram.org" class=" hover:scale-105 flex_center rounded-full w-[10vw] lg:w-[4vw] h-[10vw] lg:h-[4vw] relative socialBtn">
-                         <img loading="lazy" src="./static/images/telegram.svg" alt="" class="w-[50%] h-auto object-contain">
-                    </a>
-                    </div>
-                    
-                    <div >
-                     <a target="_blank" href="https://solana.com/" class=" hover:scale-105 flex_center rounded-full w-[10vw] lg:w-[4vw] h-[10vw] lg:h-[4vw] relative socialBtn">
-                         <img loading="lazy" src="./static/images/solana.png" alt="" class="w-[50%] h-auto object-contain">
-                    </a>
-                    </div>
- 
- 
-                 
- 
-                  </div>
-             </div>
+                            <!-- telegram -->
+                           <div
+                           >
+                            <a target="_blank" href="https://web.telegram.org" class="duration-200 hover:scale-105 flex_center rounded-md w-[40px] h-[40px] md:w-[56.08px] md:h-[56.08px] relative   border-black border-[2px] btnStyle">
+                                <img src="./static/images/telegram.png" alt="" class="w-[50%] h-auto object-contain">
+                           </a>
+                           </div> 
+                           
+                            <!-- twitter -->
+                           <div
+                           >
+                            <a target="_blank" href="https://x.com" class="duration-200 hover:scale-105 flex_center rounded-md w-[40px] h-[40px] md:w-[56.08px] md:h-[56.08px] relative   border-black border-[2px] btnStyle">
+                                <img src="./static/images/twitter.png" alt="" class="w-[50%] h-auto object-contain">
+                           </a>
+                           </div> 
+                           
+                            <!-- dexscreen -->
+                           <div
+                           >
+                            <a target="_blank" href="https://dexscreen.com" class="duration-200 hover:scale-105 flex_center rounded-md w-[40px] h-[40px] md:w-[56.08px] md:h-[56.08px] relative   border-black border-[2px] btnStyle">
+                                <img src="./static/images/dexscreenIcon.svg" alt="" class="w-[50%] h-auto object-contain">
+                           </a>
+                           </div> 
+         
+        
+                         </div>
 
-         </footer>
- 
+                    </div>
 
+                 </div>
+
+            </footer>
+ 
     </div>
-
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+ 
+ 
      <!-- aos js library animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
  
