@@ -46,6 +46,14 @@ html {
   scroll-behavior: smooth;
 }
 
+.mirrorImage{
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  -moz-transform: scaleX(-1);
+  -ms-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+}
+
 .flex_center {
   display: flex;
   justify-content: center;
