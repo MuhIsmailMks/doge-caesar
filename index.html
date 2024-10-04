@@ -78,7 +78,7 @@
          </header>
 
          <!-- hero -->
-          <section class="w-full relative h-[70vw] xl:h-[55vw] flex_center">
+          <section class="w-full relative h-[70vw] xl:h-[55vw] flex_center overflow-hidden ">
  
              <div class="w-full h-auto absolute top-0 left-0">
  
@@ -86,7 +86,7 @@
                 <img src="./static/images/topHero.svg" alt="heroBg" class="w-full h-auto object-cover absolute top-0 left-0 z-20">
 
                  <!-- sun -->
-              <div class="w-[12%] absolute left-[10%] top-[0%] flex_center">
+              <div class="w-[12%] absolute left-[10%] top-[0%] flex_center z-10">
                 <img src="./static/images/sun.svg" alt="" class="w-full" data-aos="zoom-in"
                 data-aos-duration="600"
                 data-aos-delay="100">
@@ -99,7 +99,7 @@
              </div> 
             
  
-             <div class="w-full h-auto bottom-0 absolute z-20">
+             <div class="w-full h-auto bottom-[0%] absolute ">
                 <img src="./static/images/bottomHero.png" alt="heroBg" class="w-full h-auto object-cover absolute bottom-0" loading="lazy">
              </div>
  
@@ -130,7 +130,7 @@
               
 
           </section>
-
+ 
 
           <!-- marquee -->
           <section class="w-full h-auto overflow-hidden max-w-[100%] bg-[#FFF1D5] py-2 lg:py-8 relative z-[99] marqueeContainer mt-[-1vw]">
@@ -249,6 +249,12 @@
                     <div class="bg_video max-w-[1900px] absolute w-[90%]">
                         <video class="video_service w-[100%] h-auto object-cover lg:h-auto xl:h-auto xl:w-full"   autoplay loop muted playsinline>
                             <source src="./static/images/video.mp4" type="video/mp4" > 
+                        </video>
+                    </div>
+
+                    <div class="bg_video max-w-[1900px] absolute w-[70%] z-10 bottom-[13%]">
+                        <video class="video_service w-[100%] h-auto object-cover lg:h-auto xl:h-auto xl:w-full"   autoplay loop muted playsinline>
+                            <source src="./static/images/textVideo.mp4" type="video/mp4" > 
                         </video>
                     </div>
 
