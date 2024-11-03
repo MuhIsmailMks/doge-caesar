@@ -3,249 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="icon" type="image/png"   href="./static/images/logo.png">  
+    <link rel="icon" type="image/png"  href="./static/images/heroLogo.png">  
     <!-- fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap" rel="stylesheet">
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap"
+      as="style"
+      onload="this.onload = null; this.rel = 'stylesheet';"
+    /> 
     <!-- AOS scroll effect cdn --> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
     <link rel="stylesheet" href="./static/css/style.css">
-    <title>cuft of pepe</title>
+    <title>Pomeran</title>
 </head>
 <body> 
 
-    <div class="w-full min-h-[100vh] h-auto   max-w-[100%] relative overflow-hidden">
-        
-        <!-- navbar -->
-         <header class="relative left-0 top-0 w-full h-[70px] md:h-[105px] lg:min-h-[80px]  xl:h-[8vw] flex_center z-[99] bg-[#553D3F]">
+   <div class="w-full min-h-[100vh] h-auto   max-w-[100%] relative overflow-hidden flex items-center flex-col py-[10px] lg:py-[20px]">
 
-            <nav class="w-[90%] lg:w-[80%] h-full flex_between">
+      <div class="logo relative h-auto w-[90%] flex max-lg:justify-center">
+        <img src="./static/images/logo.png" alt="" class="w-[25%] lg:w-[10%] h-auto object-contain">
+      </div>
 
-                <!-- left -->
-                 <div class="flex_center gap-[2vw]" data-aos="fade-right"
-                 data-aos-duration="800"
-                 data-aos-delay="100">
-                 
-                    <!-- logo -->
-                    <div class="h-[14vw] lg:h-[8vw] object-contain w-[14vw] lg:w-[8vw] mb-[-6vw] max-w-[400px]  rounded-full flex_center border-[.1vw] border-black">
-                        <img loading="lazy" src="./static/images/logoNav.png" alt="" class="w-[100%]"  
-                        > 
+      <div class="container2 h-auto w-[70%] relative flex_center flex-col">
+
+        <!-- hero -->
+        <div class="hero w-full h-auto flex_center max-lg:flex-col max-lg:gap-6">
+
+           <div class="about_hero w-full lg:w-[50%] relative flex flex-col gap-6 max-lg:items-center ">
+
+            <p class="font-bold text-[4vw] max-lg:hidden  ">$Pomeranian <br> Boo</p>
+            <p class="font-bold text-[8vw] lg:hidden  ">$PomeranianBoo</p>
+
+            <p class="bg-red-400 text-white text-center font-bold px-[.56vw] w-[70%] text-[18px] lg:text-[1.5vw]">The cutest memeable dog&nbsp;on the Internet</p>
+
+            <div class="links_social w-full flex items-center gap-4 max-lg:justify-center">
+
+                  <a target="_blank" href="https://x.com/" class="duration-200 hover:scale-110 relative flex_center">
+                    <img src="./static/images/x-button.png" alt="twitter" class="w-[60px] lg:w-[5vw]">
+                  </a>
+
+                  <a target="_blank" href="https://web.telegram.org/" class="duration-200 hover:scale-110 relative flex_center">
+                    <img src="./static/images/tg-button.png" alt="telegram" class="w-[60px] lg:w-[5vw]">
+                  </a>
+
+                  <a target="_blank" href="https://www.dextools.io/app/" class="duration-200 hover:scale-110 relative flex_center">
+                    <img src="./static/images/dextools.png" alt="dextools" class="w-[60px] lg:w-[5vw]">
+                  </a>
+
+                  <a target="_blank" href="https://dexscreener.com/" class="duration-200 hover:scale-110 relative flex_center">
+                    <img src="./static/images/dexscreen.png" alt="dexscreen" class="w-[60px] lg:w-[5vw]">
+                  </a>
+
+            </div>
+
+            <div class="contract flex flex-col max-lg:text-center w-full font-bold text-[14px] lg:text-[1.4vw] normalFont">
+                <p>Contract</p>
+                <div class="flex items-center max-lg:justify-center cursor-pointer gap-4 copy-box ">
+                    <span class="max-w-[100%] text-ellipsis overflow-hidden copy-box__text">0000000000000000000000000000000dead</span>
+                    <img src="./static/images/copy.svg" alt="" class="w-[30px] h-auto object-contain">
+                </div>
+            </div>
+
+           </div>
+
+           <div class="image w-full lg:w-[50%] flex_center relative">
+              <div class="img relative w-[80%] h-auto flex_center bg-red-300 border-black border-[.3vw] rounded-[1vw] overflow-hidden">
+                <img src="./static/images/heroLogo.png" alt="" class="w-full h-auto relative">
+
+                <img src="./static/images/hero_bg.gif" alt="" class="absolute w-full h-full bottom-0 object-cover">
+              </div>
+           </div>
+
+     
+
+        </div>
+
+        <!-- memes -->
+         <div class="memes w-full relative h-auto flex_center flex-col mt-[100px]">
+
+            <h2 class="text-[11vw] lg:text-[4vw] max-lg:mb-[30px]">Memes</h2>
+
+            <div class="flex_center w-full gap-2 lg:gap-4 flex-wrap">  
+                <div class="col w-[45%] md:w-[23%] border-black border-2">
+                    <img src="./static/images/meme1.png" alt="" class="w-full h-auto object-contain">
+                </div>
+                <div class="col w-[45%] md:w-[23%] border-black border-2">
+                    <img src="./static/images/meme1.png" alt="" class="w-full h-auto object-contain">
+                </div>
+                <div class="col w-[45%] md:w-[23%] border-black border-2">
+                    <img src="./static/images/meme1.png" alt="" class="w-full h-auto object-contain">
+                </div>
+                <div class="col w-[45%] md:w-[23%] border-black border-2">
+                    <img src="./static/images/meme1.png" alt="" class="w-full h-auto object-contain">
+                </div>
+                <div class="col w-[45%] md:w-[23%] border-black border-2">
+                    <img src="./static/images/meme1.png" alt="" class="w-full h-auto object-contain">
+                </div>
+                <div class="col w-[45%] md:w-[23%] border-black border-2">
+                    <img src="./static/images/meme1.png" alt="" class="w-full h-auto object-contain">
+                </div>
+                <div class="col w-[45%] md:w-[23%] border-black border-2">
+                    <img src="./static/images/meme1.png" alt="" class="w-full h-auto object-contain">
+                </div>
+                <div class="col w-[45%] md:w-[23%] border-black border-2">
+                    <img src="./static/images/meme1.png" alt="" class="w-full h-auto object-contain">
+                </div>
+            </div>
+
+         </div>
+
+        <!-- tokenomics -->
+         <div class="tokenomics w-full relative h-auto flex_center flex-col mt-[100px] ">
+
+            <h2 class="text-[11vw] lg:text-[4vw] max-lg:mb-[30px]">tokenomic</h2>
+
+            <div class="w-full relative flex_center flex-wrap gap-10 lg:gap-[2vw]">
+
+                <div class="tokenContainer h-auto w-[90%] md:w-[300px] lg:w-[20vw] rounded-[20px] lg:rounded-[2vw] flex_center flex-col  gap-[2vw] lg:gap-7 py-4 lg:py-[1vw]">
+
+                    <div class="img w-[95%] relative h-auto flex_center bg-white border-black border-[.2vw] overflow-hidden rounded-[20px] lg:rounded-[2vw]">
+                        <img src="./static/images/logo.png" alt="" class="w-full h-auto object-contain">
+
+                        <img src="./static/images/token3.gif" alt="" class="absolute left-0 bottom-0 w-[40%] object-contain">
                     </div>
 
-                    <p class="text-[5vw] lg:text-[3vw] mb-[-2vw] text-[#FFFFFF] logoText">cuft of pepe</p>
-
-                 </div>
-
-                <!-- right -->
-                 <div class="flex_center gap-2 lg:gap-6">
-                   
-                   <div data-aos="fade-left"
-                   data-aos-duration="800"
-                   data-aos-delay="100">
-                    <a target="_blank" href="https://x.com/" class=" hover:scale-105 flex_center rounded-full w-[30.08px] lg:w-[4vw] h-[30.08px] lg:h-[4vw] relative socialBtn">
-                        <img loading="lazy" src="./static/images/twitter.svg" alt="" class="w-[50%] h-auto object-contain">
-                   </a>
-                   </div>
-                   
-                   <div data-aos="fade-left"
-                   data-aos-duration="800"
-                   data-aos-delay="100">
-                    <a target="_blank" href="https://web.telegram.org" class=" hover:scale-105 flex_center rounded-full w-[30.08px] lg:w-[4vw] h-[30.08px] lg:h-[4vw] relative socialBtn">
-                        <img loading="lazy" src="./static/images/telegram.svg" alt="" class="w-[50%] h-auto object-contain">
-                   </a>
-                   </div>
-                   
-                   <div data-aos="fade-left"
-                   data-aos-duration="800"
-                   data-aos-delay="100">
-                    <a target="_blank" href="https://etherscan.io/" class=" hover:scale-105 flex_center rounded-full w-[30.08px] lg:w-[4vw] h-[30.08px] lg:h-[4vw] relative socialBtn">
-                        <img loading="lazy" src="./static/images/etherscan-logo.svg" alt="" class="w-[50%] h-auto object-contain">
-                   </a>
-                   </div>
-                   
-                   <div data-aos="fade-left"
-                   data-aos-duration="800"
-                   data-aos-delay="100">
-                    <a target="_blank" href="https://www.dextools.io/" class=" hover:scale-105 flex_center rounded-full w-[30.08px] lg:w-[4vw] h-[30.08px] lg:h-[4vw] relative socialBtn">
-                        <img loading="lazy" src="./static/images/dex_white.png" alt="" class="w-[50%] h-auto object-contain">
-                   </a>
-                   </div>
-
-                 </div>
- 
-
-            </nav>
-
-         </header>
-
-         <!-- hero -->
-          <section class="w-full h-auto relative flex_center mt-[-2vw]">
-
-            <div class="w-full h-auto relative">
-                <img loading="lazy" src="./static/images/bgHero.png" alt="hero" class="w-full h-auto object-cover zoomIn_animation" style="animation-duration: 15s;">
-
-                <img loading="lazy" src="./static/images/heroImg.png" alt="hero" class="w-full h-auto object-cover zoomIn_animation absolute bottom-0" style="animation-duration: 15s;animation-delay: -10s;">
-            </div>
-
-            <div class="w-[40%] text-white absolute  leading-[1] titleHero float_animation" data-aos="zoom-in"
-            data-aos-duration="800"
-            data-aos-delay="100">
-            <img src="./static/images/heroText.png" alt="" class="w-[80%]">
-            </div>
-
-          </section>
-
-          <!-- line border -->
-          <section class="w-full h-auto relative bg-[#472E2A]">
-
-            <div class="w-full h-auto relative">
-                <img loading="lazy" src="./static/images/lines.png" alt="hero" class="w-full h-auto object-cover">
-            </div>
-
-          </section>
- 
-          <!-- about -->
-        <section class="aboutContainer w-full h-auto relative overflow-hidden flex_center flex-col max-md:pt-[15vw] max-lg:pt-[10vw] max-lg:justify-start max-lg:py-[10vw]"> 
-            <!-- content -->
-             <div class="relative lg:absolute  w-full left-0 flex_center gap-[5vw] lg:gap-[3vw] z-10 text-center lg:text-left flex-wrap">
-
-                <!-- left -->
-                 <div class=" w-[90%] lg:w-[45%] h-auto flex flex-col gap-4 text-white max-lg:items-center">
-                    
-                <h2 class="w-full leading-[1] text-[8vw] lg:text-[5vw]" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="200">About Ginkgo</h2>
-
-                <p class="text-[3vw] lg:text-[1.4vw]" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="400">China's National Treasure" meme coin is a cryptocurrency inspired by China's beloved symbols, likely the panda, created for humor and social media buzz without substantial intrinsic value</p>
-
-                <div class="ca flex_between w-[80%] py-[.5vw] px-[1vw] text[2vw] lg:text-[1.7vw] rounded-full border-black border-[.2vw] copy-box cursor-pointer" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="600">
-
-                    <p>CA:</p>
-
-                    <p class="value glutenFont copy-box__text max-w-[90%] overflow-hidden text-ellipsis">000000000000000000000000DEAD</p>
-
-                    <span class="w-[7%] cursor-pointer ">
-                        <img loading="lazy" src="./static/images/bxs_copy.svg" alt="copy" class="w-full">
-                    </span>
-
-                     </div>
-                 </div>
-
-                <!-- right -->
-                 <div class=" w-[90%] lg:w-[35%] flex flex-col items-center">
-
-                    <img src="./static/images/imageAbout.png" alt="aboutImg" class="w-full h-auto object-contain" data-aos="zoom-in"
-                    data-aos-duration="800"
-                    data-aos-delay="200">
-
-                    <div class="w-auto mt-[-2rem] py-2 md:py-4 px-5   rounded-full border-[4px] border-[#383838] relative overflow-hidden socialBg" data-aos="fade-up"
-                    data-aos-duration="800"
-                    data-aos-delay="400"> 
-                        
-                        <div class="flex_center gap-3 lg:gap-6 relative" >
-                   
-                            <div >
-                             <a target="_blank" href="https://x.com/" class=" hover:scale-105 flex_center rounded-full w-[36.08px] lg:w-[4vw] h-[36.08px] lg:h-[4vw] relative socialBtn">
-                                 <img loading="lazy" src="./static/images/twitter.svg" alt="" class="w-[50%] h-auto object-contain">
-                            </a>
-                            </div>
-                            
-                            <div  >
-                             <a target="_blank" href="https://web.telegram.org" class=" hover:scale-105 flex_center rounded-full w-[36.08px] lg:w-[4vw] h-[36.08px] lg:h-[4vw] relative socialBtn">
-                                 <img loading="lazy" src="./static/images/telegram.svg" alt="" class="w-[50%] h-auto object-contain">
-                            </a>
-                            </div>
-                            
-                            <div>
-                             <a target="_blank" href="https://etherscan.io/" class=" hover:scale-105 flex_center rounded-full w-[36.08px] lg:w-[4vw] h-[36.08px] lg:h-[4vw] relative socialBtn">
-                                 <img loading="lazy" src="./static/images/etherscan-logo.svg" alt="" class="w-[50%] h-auto object-contain">
-                            </a>
-
-                            </div>
-         
-                            
-                            <div>
-                             <a target="_blank" href="https://www.dextools.io/app/en/pairs" class=" hover:scale-105 flex_center rounded-full w-[36.08px] lg:w-[4vw] h-[36.08px] lg:h-[4vw] relative socialBtn">
-                                 <img loading="lazy" src="./static/images/dex_white.png" alt="" class="w-[50%] h-auto object-contain">
-                            </a>
-
-                            </div>
-         
-                          </div>
-
+                    <div class="text flex_center flex-col font-bold text-[15px] lg:text-[1.5vw] max-lg:gap-3 gap-4">
+                        <p class="max-lg:text-[18px]">Total Supply</p>
+                        <p>100.000.000</p>
                     </div>
 
-                 </div>
+                </div>
 
-             </div>
+                <div class="tokenContainer h-auto w-[90%] md:w-[300px] lg:w-[20vw] rounded-[20px] lg:rounded-[2vw] flex_center flex-col  gap-[2vw] lg:gap-7 py-4 lg:py-[1vw]">
 
-            <!-- image bg -->
-            <div class="w-full h-full absolute top-0 lg:relative">
-                <img loading="lazy" src="./static/images/bgAbout.png" alt="hero" class="w-full h-full object-cover  zoomIn_animation 5s ease-in-out infinite;" style="animation-duration: 20s;"> 
-            </div>
+                    <div class="img w-[95%] relative h-auto flex_center bg-white border-black border-[.2vw] overflow-hidden rounded-[20px] lg:rounded-[2vw]">
+                        <img src="./static/images/logo.png" alt="" class="w-full h-auto object-contain">
 
-        </section>
-
-           <!-- line border -->
-           <section class="w-full h-auto relative bg-[#472E2A]">
-
-            <div class="w-full h-auto relative">
-                <img loading="lazy" src="./static/images/footerLines.png" alt="hero" class="w-full h-auto object-cover">
-                <img loading="lazy" src="./static/images/rotateLine.png" alt="hero" class="w-full h-auto object-cover">
-            </div>
-
-          </section>
-
-        <!-- footer -->
-         <footer class="w-full relative h-auto flex_center flex-col pt-[3vw] max-lg:justify-end max-lg:gap-5">
-
-            <div class="w-full h-full absolute left-0 top-0">
-                <img src="./static/images/bgFooter.png" alt="" class="w-full h-full object-cover zoomIn_animation" style="animation-duration: 20s;">
-            </div>
- 
-
-             <div class="flex_center gap-[2vw] flex-col mb-[4vw] relative z-10" data-aos="fade-up"
-             data-aos-duration="800"
-             data-aos-delay="200">
-
-                <div class="flex_center gap-[2vw]" >
-                 
-                    <!-- logo -->
-                    <div class="h-[14vw] lg:h-[8vw] object-contain w-[14vw] lg:w-[8vw] max-w-[400px]   rounded-full flex_center border-[.1vw] border-black float_animation" >
-                        <img loading="lazy" src="./static/images/logoNav.png" alt="" class="w-[100%]"  
-                        > 
+                        <img src="./static/images/token2.gif" alt="" class="absolute left-0 bottom-[8%] w-[40%] object-contain">
                     </div>
 
-                    <p class="text-[5vw] lg:text-[3vw] mb-[-2vw] text-[#FFFFFF] logoText">cuft of pepe</p>
+                    <div class="text flex_center flex-col font-bold text-[15px] lg:text-[1.5vw] max-lg:gap-3 gap-4">
+                        <p class="max-lg:text-[18px]">Tax</p>
+                        <p>0%</p>
+                    </div>
 
-                 </div> 
+                </div>
 
-                 <p class="glutenFont text-center text-white text-[2vw]">© cuft of pepe 2024 - All Rights Reserved </p>
+                <div class="tokenContainer h-auto w-[90%] md:w-[300px] lg:w-[20vw] rounded-[20px] lg:rounded-[2vw] flex_center flex-col  gap-[2vw] lg:gap-7 py-4 lg:py-[1vw]">
 
-             </div>
- 
+                    <div class="img w-[95%] relative h-auto flex_center bg-white border-black border-[.2vw] overflow-hidden rounded-[20px] lg:rounded-[2vw]">
+                        <img src="./static/images/logo.png" alt="" class="w-full h-auto object-contain">
 
-         </footer>
- 
-         <!-- line border -->
-         <section class="w-full h-auto relative  mt-[-3vw]">
+                        <img src="./static/images/token1.gif" alt="" class="absolute left-0 bottom-0 w-[40%] object-contain">
+                    </div>
 
-            <div class="w-full h-auto relative">
-                <img loading="lazy" src="./static/images/lines.png" alt="hero" class="w-full h-auto object-cover">
+                    <div class="text flex_center flex-col font-bold text-[15px] lg:text-[1.5vw] max-lg:gap-3 gap-4">
+                        <p class="max-lg:text-[18px]">LP Burned</p>
+                        <p>100%</p>
+                    </div>
+
+                </div>
+
             </div>
 
-          </section>
- 
+         </div>
 
-    </div>
+      </div>
+
+      <p class="text-center font-bold mt-10 lg:mt-[4vw] text-[3vw] lg:text-[1.7vw]">©2024 $PomeranianBoo - All Right Reserved.</p>
+
+   </div>
 
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

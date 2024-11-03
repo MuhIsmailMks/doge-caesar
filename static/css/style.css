@@ -5,17 +5,32 @@
 }
 
 @font-face {
-  font-family: "Genty";
-  src: url("../fonts/GentyDemo-Regular.ttf") format("truetype");
+  font-family: "architects";
+  src: url("../fonts/architects.ttf") format("truetype");
 }
-
-.glutenFont{
-  font-family: "Gluten", cursive;
-}
-
+ 
 body {
-  font-family: "Genty", sans-serif;
-  background-color: #553D3F;  
+  font-family: "architects", sans-serif;
+
+}
+
+body::before{
+  content: "";
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  
+  background-image: url('../images/gradient-grainy-texture.jpg');  
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.normalFont{
+  font-family: sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -37,12 +52,7 @@ body::-webkit-scrollbar-thumb {
 html {
   scroll-behavior: smooth;
 }
-
-header{
-  border-top: 3px solid #341115;
-  border-bottom: 3px solid #341115;
-}
-
+ 
 .flex_center {
   display: flex;
   justify-content: center;
@@ -55,78 +65,12 @@ header{
   align-items: center;
 }
  
-
-.socialBtn{
-  background-color: #664b4d;
-  border: .1vw solid #242422;
-  box-shadow: 1.57px 1.57px 0px 0px #422E30;
-  transition: .25s ease-in;
-  -webkit-transition: .25s ease-in;
-  -moz-transition: .25s ease-in;
-  -ms-transition: .25s ease-in;
-  -o-transition: .25s ease-in;
-}
-
-.socialBtn img{
-  transition: .2s ease-in-out;
-  -webkit-transition: .2s ease-in-out;
-  -moz-transition: .2s ease-in-out;
-  -ms-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
-}
-
-.socialBtn:hover img{ 
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
-
-.logoText{
-  -webkit-text-stroke: 1px #E68F00;
-}
  
-.titleHero{
-  text-shadow: 0 0px 1vw rgba(0, 0, 0, 0.678);
+.tokenContainer{
+  background: linear-gradient(180deg, #A38CD2 0%, #EDB9E7 100%);
+
 }
 
-.aboutContainer{
-  background-color: #472E2A;
-}
-
-.aboutContainer h2{ 
-  text-shadow: .3vw .6vw 0px #00000040;
-}
-
-.socialBg{
-  background-image: url('../images/bgSocial.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.socialBg .socialBtn{
-  background-color: #383838;
-}
-
-.disclaimer::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%; 
-  background-image: url("../images/navBg.svg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
 
 .float_animation {
   animation: float 7s ease-in-out infinite;
