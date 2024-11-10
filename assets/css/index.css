@@ -1248,8 +1248,7 @@ img{
     width: 8vw;
 }
 .header .center-menu .right-side-menu a:nth-child(5) img {  
-    width: 15vw;
-    background-color: red;
+    width: 15vw; 
 }
 .navbar-toggle span {
     display: block;
@@ -2122,4 +2121,14 @@ img{
     display: none;
     position: absolute;
     z-index: -9999;
+}
+
+
+@media screen and (max-width:600px) {
+        .header .center-menu .right-side-menu a:not(a:nth-child(5)) img {
+            width: 8vw; 
+            max-width: 8vw;
+        }
+
+
 }
