@@ -1,200 +1,455 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="icon" type="image/png"  href="./static/images/heroLogo.png">  
-    <!-- fonts -->
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&amp;display=swap"
-      as="style"
-      onload="this.onload = null; this.rel = 'stylesheet';"
-    /> 
-    <!-- AOS scroll effect cdn --> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-    <!-- tailwind css cdn -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- css link -->
-    <link rel="stylesheet" href="./static/css/style.css">
-    <title>Generation Z</title>
-</head>
-<body> 
-
-   <div class="w-full min-h-[100vh] h-auto   max-w-[100%] relative overflow-hidden flex items-center flex-col py-[10px] lg:py-[20px]">
-
-      <div class="logo relative h-auto w-[90%] flex max-lg:justify-center">
-        <img src="./static/images/logo.png" alt="" class="w-[25%] lg:w-[10%] h-auto object-contain">
-      </div>
-
-      <div class="container2 h-auto w-[70%] relative flex_center flex-col">
-
-        <!-- hero -->
-        <div class="hero w-full h-auto flex_center max-lg:flex-col max-lg:gap-6">
-
-           <div class="about_hero w-full lg:w-[50%] relative flex flex-col gap-6 max-lg:items-center ">
-
-            <p class="font-bold text-[4vw] max-lg:hidden  ">$ZOOMER 
-            <p class="font-bold text-[8vw] lg:hidden  ">$ZOOMER</p>
-
-            <p class="bg-red-400 text-white text-center font-bold py-2 px-[.56vw] w-[70%] text-[18px] lg:text-[1.5vw]">The cutest memeable dog&nbsp;on the Internet</p>
-
-            <div class="links_social w-full flex items-center gap-4 max-lg:justify-center">
-
-                  <a target="_blank" href="https://x.com/" class="duration-200 hover:scale-110 relative flex_center">
-                    <img src="./static/images/x-button.png" alt="twitter" class="w-[60px] lg:w-[5vw]">
-                  </a>
-
-                  <a target="_blank" href="https://web.telegram.org/" class="duration-200 hover:scale-110 relative flex_center">
-                    <img src="./static/images/tg-button.png" alt="telegram" class="w-[60px] lg:w-[5vw]">
-                  </a>
-
-                  <a target="_blank" href="https://www.dextools.io/app/" class="duration-200 hover:scale-110 relative flex_center">
-                    <img src="./static/images/dextools.png" alt="dextools" class="w-[60px] lg:w-[5vw]">
-                  </a>
-
-                  <a target="_blank" href="https://dexscreener.com/" class="duration-200 hover:scale-110 relative flex_center">
-                    <img src="./static/images/dexscreen.png" alt="dexscreen" class="w-[60px] lg:w-[5vw]">
-                  </a>
-
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>BTC 100K</title>
+        <link rel="icon" href="assets/images/favicon.png" />
+        
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link rel="stylesheet" href="assets/css/css2.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css" />
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        
+        <script type="text/javascript" src="assets/javascript/script.js?v=323" defer></script>
+    </head>
+    <body>
+        <!-- <div class="home" id="home"></div> -->
+        <section class="hero-section">
+            <header class="header">
+                <nav class="navbar">
+                    <diV class="left-side-menu">
+                        <a href="#home">
+                            <img src="assets/images/logo.png" alt="logo" title="" />
+                        </a>
+                    </diV>
+                    <div class="center-menu">
+                        <div class="left-menu">
+                            <a href="#about" class="tg" >
+                                <li>About</li>
+                            </a>
+                            <a href="#tokenomics" class="tg" > 
+                                <li>Tokenomics</li>
+                            </a>
+                            <a href="#htb" class="tg"> 
+                                <li>How To Buy</li>
+                            </a>
+                            <a href="#chart" class="tg"> 
+                                <li>Live Chart</li>
+                            </a>
+                       </div>
+                        <div class="right-side-menu">
+                            <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xf6277796b7ad9694B58CfD4AA46d868225618678?t=1713298705948"   class="new_link">
+                                <img src="./assets/images/sdq.png" alt="logo">
+                            </a>
+                            <a href="https://etherscan.io/token/0xf6277796b7ad9694b58cfd4aa46d868225618678?__cf_chl_rt_tk=YJ6aoZbBinQX3NsoVMXsEt.pVA5S5Dt_ljKTbwsV.yU-1706623684-0-gaNycGzNDiU">
+                                <img src="assets/images/cmc.png" alt="logo">
+                            </a>
+                            <a href="https://twitter.com/BTCHalvingETH">
+                                <img src="assets/images/TWITTER.png" alt="logo">
+                            </a>
+                            <a href="https://t.me/BitcoinHalvingETH">
+                                <img src="assets/images/TELEGRAM.png" alt="logo">
+                            </a>
+                            <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf6277796b7ad9694B58CfD4AA46d868225618678">
+                                <img src="assets/images/buy-btc.png" alt="logo">
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <div class="navbar-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </nav>
+            </header>
+            <img src="assets/images/c-1.png" alt="" class="c-1">
+            <img src="assets/images/c-2.png" alt="" class="c-2">
+            <img src="assets/images/c-3.png" alt="" class="c-3">
+            <div class="heading">
+                <img src="assets/images/heading.png" alt="">
             </div>
-
-            <div class="contract flex flex-col max-lg:text-center w-full font-bold text-[14px] lg:text-[1.4vw] normalFont">
-                <p>Contract</p>
-                <div class="flex items-center max-lg:justify-center cursor-pointer gap-4 copy-box ">
-                    <span class="max-w-[100%] text-ellipsis overflow-hidden copy-box__text">0000000000000000000000000000000dead</span>
-                    <img src="./static/images/copy.svg" alt="" class="w-[30px] h-auto object-contain">
+        </section>
+        
+        <section class="ca">
+            <img src="assets/images/C-4.png" alt="" class="c-4">
+            <div class="input-bg">
+                <input type="text" value="Contract: 0xf6277796b7ad9694B58CfD4AA46d868225618678">
+            </div>
+            <div class="btn-group">
+                <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xf6277796b7ad9694B58CfD4AA46d868225618678">
+                    <img src="assets/images/dextool-btn.png" alt="">
+                </a>
+                <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf6277796b7ad9694B58CfD4AA46d868225618678">
+                    <img src="assets/images/buy-btc.png" alt="">
+                </a>
+            </div>
+        </section>
+        
+        <section class="about" id="about">
+            <img src="assets/images/c-5.png" alt="" class="c-5">
+            <img src="assets/images/btc.png" alt="" class="btc-1">
+            <div class="inner-about">
+                <div class="left">
+                    <img src="assets/images/about-img.png" alt="">
+                </div>
+                <div class="right">
+                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <h4>What is a<br> BTC100k?</h4>
+                            <p>A <a href="https://www.ig.com/en/bitcoin-btc">bitcoin</a> 100K (sometimes ‘halvening’) is an event where the reward for mining new blocks is halved, meaning miners receive 50% fewer bitcoins for verifying transactions. BTC100ks are scheduled to occur once every 210,000 blocks – roughly every four years – until the maximum supply of 21 million bitcoins has been generated by the network.</p>
+                          </div>
+                          <div class="carousel-item">
+                            <h4>How might the bitcoin<br> 100K impact BTC’s price?
+                            </h4>
+                            <p>It is not yet clear how the next 100K will impact bitcoin’s price. Many commentators believe that the price will follow a similar pattern to the previous three 100Ks, rising after the event itself as the supply of new coins is constrained.</p>
+                            <p>However, any price rise will depend on how demand for bitcoins shapes up over the course of the 100K. Demand is by no means certain to increase – or even remain static – as the market has matured significantly since the last 100K in 2020, and there are now many more well-established cryptocurrencies competing for users.</p>
+                          </div>
+                          <div class="carousel-item">
+                            <h4> Why does bitcoin halve?</h4>
+                            <p>Bitcoin halves due to the design of its software, which was created by a mysterious person or group using the assumed pseudonym ‘Satoshi Nakamoto’.</p>
+                            <p>While Satoshi hasn’t explicitly explained the reasons behind 100K, many have speculated that the system was designed to distribute coins more quickly at the beginning to incentivise people to join the network and mine new blocks. Under this theory, block rewards were programmed to halve at regular intervals because the value of each coin rewarded was deemed likely to increase as the network expanded.</p>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev prv" href="#carouselExampleControls" role="button" data-slide="prev">
+                          <span class="prev-icon" aria-hidden="true"><img src="assets/images/prev.png" alt=""></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next nxt" href="#carouselExampleControls" role="button" data-slide="next">
+                          <span class="" aria-hidden="true"><img src="assets/images/next.png" alt=""></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
                 </div>
             </div>
-
-           </div>
-
-           <div class="image w-full lg:w-[50%] flex_center relative">
-              <div class="img relative w-[80%] h-auto flex_center bg-red-300 border-black border-[.3vw] rounded-[1vw] overflow-hidden">
-                <img src="./static/images/heroLogo.png" alt="" class="w-full h-auto relative">
-
-                <img src="./static/images/hero_bg.gif" alt="" class="absolute w-full h-full bottom-0 object-cover">
-              </div>
-           </div>
-
-     
-
-        </div>
-
-        <!-- memes -->
-         <div class="memes w-full relative h-auto flex_center flex-col mt-[100px]">
-
-            <h2 class="text-[11vw] lg:text-[4vw] max-lg:mb-[30px]">Memes</h2>
-
-            <div class="flex_center w-full gap-2 lg:gap-4 flex-wrap">   
-
-                <div class="col border-black border-[.2vw] w-[100%] md:w-[38%] h-auto bg-white">
-                    <video autoplay loop muted playsinline style="pointer-events: none;" class="w-full h-auto object-cover">
-                        <source src="./static/video/meme1.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+        </section>
+        
+        <section class="countdown">
+            <img src="assets/images/c-1.png" alt="" class="c-6">
+            <h3>LIVE BTC100k COUNTDOWN</h3>
+            <h5 class="text-notices" id="notify">loading live data...</h5>
+            <div class="countdown-content">
+                <div class="hiddenElement">
+                    <p>Predicted Date</p>
+                    <h5 id="dateEst">-</h5>
+                    <p id="timeEst">-</p>
                 </div>
-
-                <div class="col border-black border-[.2vw] w-[100%] md:w-[38%] h-auto bg-white">
-                    <video autoplay loop muted playsinline style="pointer-events: none;" class="w-full h-auto object-cover">
-                        <source src="./static/video/meme2.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="hiddenElement">
+                    <p>Est. Time Remaining</p>
+                    <h5 id="countdown">-</h5>
+                    <p>DAYS &nbsp;&nbsp;&nbsp;&nbsp; HOURS&nbsp;&nbsp; MINS &nbsp;&nbsp;SECS</p>
                 </div>
-
-                <div class="col border-black border-[.2vw] w-[100%] md:w-[38%] h-auto bg-white">
-                    <video autoplay loop muted playsinline style="pointer-events: none;" class="w-full h-auto object-cover">
-                        <source src="./static/video/meme3.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div class="hiddenElement">
+                    <p>Blocks Remaining</p>
+                    <h5 id="blockLeft">-</h5>
+                    <p>TARGET #840,000</p>
                 </div>
-
-                <div class="col border-black border-[.2vw] w-[100%] md:w-[38%] h-auto bg-white">
-                    <video autoplay loop muted playsinline style="pointer-events: none;" class="w-full h-auto object-cover">
-                        <source src="./static/video/meme4.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
+                <div>
+                    <p>Bitcoin Price</p>
+                    <h5 id="btcPrice">$<span id="priceChange"></span></h5>
+                    <p>LIVE</p>
                 </div>
-
-                <div class="col border-black border-[.2vw] w-[100%] md:w-[38%] h-auto bg-white">
-                    <video autoplay loop muted playsinline style="pointer-events: none;" class="w-full h-auto object-cover">
-                        <source src="./static/video/meme5.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-
             </div>
-
-         </div>
-
-        <!-- tokenomics -->
-         <div class="tokenomics w-full relative h-auto flex_center flex-col mt-[100px] ">
-
-            <h2 class="text-[11vw] lg:text-[4vw] max-lg:mb-[30px]">tokenomic</h2>
-
-            <div class="w-full relative flex_center flex-wrap gap-10 lg:gap-[2vw]">
-
-                <div class="tokenContainer h-auto w-[90%] md:w-[300px] lg:w-[20vw] rounded-[20px] lg:rounded-[2vw] flex_center flex-col  gap-[2vw] lg:gap-7 py-4 lg:py-[1vw]">
-
-                    <div class="img w-[95%] relative h-auto flex_center bg-white border-black border-[.2vw] overflow-hidden rounded-[20px] lg:rounded-[2vw]">
-                        <img src="./static/images/logo.png" alt="" class="w-full h-auto object-contain">
-
-                        <img src="./static/images/token3.gif" alt="" class="absolute left-0 bottom-0 w-[40%] object-contain">
-                    </div>
-
-                    <div class="text flex_center flex-col font-bold text-[15px] lg:text-[1.5vw] max-lg:gap-3 gap-4">
-                        <p class="max-lg:text-[18px]">Total Supply</p>
-                        <p>100.000.000</p>
-                    </div>
-
+        </section>
+        
+        <section class="tokenomics" id="tokenomics">
+            <img src="assets/images/btc.png" alt="" class="btc-2">
+            <img src="assets/images/btc-invert.png" alt="" class="btc-3">
+            <img src="assets/images/c-2.png" alt="" class="c-7">
+            <img src="assets/images/token-heading.png" alt="" class="token-heading">
+            <img src="assets/images/token-img.png" alt="" class="token-img">
+            <div class="token-content">
+                <div class="left">
+                    <p>Total Supply:</p>
+                    <h4>740,000 $BTC</h4>
                 </div>
-
-                <div class="tokenContainer h-auto w-[90%] md:w-[300px] lg:w-[20vw] rounded-[20px] lg:rounded-[2vw] flex_center flex-col  gap-[2vw] lg:gap-7 py-4 lg:py-[1vw]">
-
-                    <div class="img w-[95%] relative h-auto flex_center bg-white border-black border-[.2vw] overflow-hidden rounded-[20px] lg:rounded-[2vw]">
-                        <img src="./static/images/logo.png" alt="" class="w-full h-auto object-contain">
-
-                        <img src="./static/images/token2.gif" alt="" class="absolute left-0 bottom-[8%] w-[40%] object-contain">
-                    </div>
-
-                    <div class="text flex_center flex-col font-bold text-[15px] lg:text-[1.5vw] max-lg:gap-3 gap-4">
-                        <p class="max-lg:text-[18px]">Tax</p>
-                        <p>0%</p>
-                    </div>
-
+                <div class="center">
+                    <p>Liquidity:</p>
+                    <h4>656,250 $BTC</h4>
                 </div>
-
-                <div class="tokenContainer h-auto w-[90%] md:w-[300px] lg:w-[20vw] rounded-[20px] lg:rounded-[2vw] flex_center flex-col  gap-[2vw] lg:gap-7 py-4 lg:py-[1vw]">
-
-                    <div class="img w-[95%] relative h-auto flex_center bg-white border-black border-[.2vw] overflow-hidden rounded-[20px] lg:rounded-[2vw]">
-                        <img src="./static/images/logo.png" alt="" class="w-full h-auto object-contain">
-
-                        <img src="./static/images/token1.gif" alt="" class="absolute left-0 bottom-0 w-[40%] object-contain">
-                    </div>
-
-                    <div class="text flex_center flex-col font-bold text-[15px] lg:text-[1.5vw] max-lg:gap-3 gap-4">
-                        <p class="max-lg:text-[18px]">LP Burned</p>
-                        <p>100%</p>
-                    </div>
-
+                <div class="right">
+                    <p>Marketing, listings</p>
+                    <h4>83,750 $BTC</h4>
                 </div>
-
             </div>
-
-         </div>
-
-      </div>
-
-      <p class="text-center font-bold mt-10 lg:mt-[4vw] text-[3vw] lg:text-[1.7vw]">©2024 $ZOOMER - All Right Reserved.</p>
-
-   </div>
-
-    <!-- gsap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-     <!-- aos js library animation -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
- 
-    <script src="./static/js/index.js"></script>
-
-</body>
+        </section>
+        
+        <section class="yt-video">
+            <img src="assets/images/c-3.png" alt="" class="c-8">
+            <img src="assets/images/btc-invert.png" alt="" class="btc-4">
+            
+            <div class="yt-bg">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4LkiOvdwOgg?si=AX54-boltBqWydi_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </section>
+        
+        <section class="photos">
+            <div class="library-1">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="assets/images/img-1.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-2.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-3.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-4.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-5.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-1.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-2.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-3.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-4.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-5.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-1.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-2.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-3.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-4.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-5.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-1.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-2.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-3.png" alt="slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="library-2">
+                <div class="slider">
+                    <div class="slide-track slide-track1">
+                        <div class="slide">
+                            <img src="assets/images/img-6.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-7.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-8.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-9.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-10.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-6.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-7.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-8.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-9.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-10.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-6.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-7.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-8.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-9.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-10.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-6.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-7.png" alt="slide">
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/img-8.png" alt="slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="chart" id="chart">
+            <img src="assets/images/chart-heading.png" alt="" class="chart-heading">
+            <div class="chart-content">
+                <div class="left">
+                    <div class="inner-left">
+                        <iframe height="600px" width="100%" id="geckoterminal-embed" title="GeckoTerminal Embed" src="https://www.geckoterminal.com/en/eth/pools/0x88e6a0c2ddd26feeb64f039a2c41296fcb3f5640?embed=1&info=0&swaps=0" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="right">
+                    <iframe src="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf6277796b7ad9694B58CfD4AA46d868225618678" frameborder="0"></iframe>
+                    <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf6277796b7ad9694B58CfD4AA46d868225618678">
+                        <img src="assets/images/swap-btn.png" alt="" class="swap">
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="htb" id="htb">
+            <img src="assets/images/c-1.png" alt="" class="c-9">
+            <img src="assets/images/btc-invert.png" alt="" class="btc-5">
+            <img src="assets/images/btc.png" alt="" class="btc-6">
+            <img src="assets/images/dog.png" alt="" class="dog">
+            <img src="assets/images/coin.png" alt="" class="coin">
+            <img src="assets/images/htb-heading.png" alt="" class="htb-heading">
+            <div class="htb-content">
+                <div class="process pro-1">
+                    <div>
+                        <h3>1</h3>
+                    </div>
+                    <div>
+                        <p>Download and set up a compatible wallet, such as MetaMask or Trust Wallet.</p>
+                    </div>
+                </div>
+                <div class="process pro-2">
+                    <div>
+                        <h3>2</h3>
+                    </div>
+                    <div>
+                        <p>Purchase Ethereum (ETH) on a cryptocurrency exchange and transfer it to your wallet.</p>
+                    </div>
+                </div>
+                <div class="process pro-3">
+                    <div>
+                        <h3>3</h3>
+                    </div>
+                    <div>
+                        <p>Visit a decentralized exchange like Uniswap and connect your wallet.</p>
+                    </div>
+                </div>
+                <div class="process pro-4">
+                    <div>
+                        <h3>4</h3>
+                    </div>
+                    <div>
+                        <p>Select 100K Bitcoin Token</p><br>
+                        <p>amount you'd like to buy. The official tokenaddress to import is:</p>
+                        <p class="ca" id="paragraphToCopy">0xf6277796b7ad9694B58CfD4AA46d868225618678 <span  onclick="copyText()"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                            <path d="M5.7 5.4V1.8C5.7 0.81 6.555 0 7.6 0H17.1C17.6039 0 18.0872 0.189642 18.4435 0.527208C18.7998 0.864773 19 1.32261 19 1.8V10.8C19 11.2774 18.7998 11.7352 18.4435 12.0728C18.0872 12.4104 17.6039 12.6 17.1 12.6H13.3V16.2C13.3 16.6774 13.0998 17.1352 12.7435 17.4728C12.3872 17.8104 11.9039 18 11.4 18H1.9C1.39609 18 0.912816 17.8104 0.556497 17.4728C0.200178 17.1352 0 16.6774 0 16.2V7.2C0 6.21 0.855 5.4 1.9 5.4H5.7ZM7.6 5.4H11.4C11.9039 5.4 12.3872 5.58964 12.7435 5.92721C13.0998 6.26477 13.3 6.72261 13.3 7.2V10.8H17.1V1.8H7.6V5.4ZM1.9 7.2V16.2H11.4V7.2H1.9Z" fill="black"/>
+                          </svg></span></p>
+                    </div>
+                </div>
+                <div class="process pro-5">
+                    <div>
+                        <h3>5</h3>
+                    </div>
+                    <div>
+                        <p>Review the transaction details, confirm the swap, and enjoy BTC!</p>
+                    </div>
+                </div>
+                <p class="note">*Please note that trading fees and slippage may apply during the purchase process.</p>
+            </div>
+            <a href="https://app.uniswap.org/swap?inputCurrency=ETH&outputCurrency=0xf6277796b7ad9694B58CfD4AA46d868225618678" target="_blank">
+                <img src="assets/images/buy-btc-2.png" alt="" class="buy-btc-2">
+            </a>
+        </section>
+        
+        <section class="footer-wrap">
+            <footer class="footer">
+                <div class="left">
+                    <a href="#">
+                        <img src="assets/images/logo-2.png" alt="logo">
+                    </a>
+                    <p>A BTC100k (sometimes ‘halvening’) is an event where the reward for mining new blocks is halved, meaning miners receive 50% fewer bitcoins for verifying transactions.</p>
+                    <div class="social-link">
+                        <a href="https://twitter.com/BTCHalvingETH">
+                            <img src="assets/images/TWITTER.png" alt="">
+                        </a>
+                        <a href="https://t.me/BitcoinHalvingETH">
+                            <img src="assets/images/TELEGRAM.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="f1">
+                        <h3>Quick Links</h3>
+                        <a href="#about">
+                            <p>About</p>
+                        </a>
+                        <a href="#tokenomics">
+                            <p>Tokenomics</p>
+                        </a>
+                        <a href="#htb">
+                            <p>How To Buy</p>
+                        </a>
+                        <a href="#chart" class="tg"> 
+                            <li>Live Chart</li>
+                        </a>
+                    </div>
+                    <div class="f2">
+                        <h3>Resources</h3>
+                        <a href="https://etherscan.io/token/0xf6277796b7ad9694b58cfd4aa46d868225618678?__cf_chl_rt_tk=YJ6aoZbBinQX3NsoVMXsEt.pVA5S5Dt_ljKTbwsV.yU-1706623684-0-gaNycGzNDiU">
+                            <p>Etherscan</p>
+                        </a>
+                        <a href="https://www.dextools.io/app/en/ether/pair-explorer/0xf6277796b7ad9694B58CfD4AA46d868225618678">
+                            <p>Dextools</p>
+                        </a>
+                    </div>
+                    <div class="f3">
+                        <h3>Email</h3>
+                        <div class="social-link">
+                            <div class="socials" id="social">
+                                <a href="mailto:support@btchalvingtoken.io">
+                                    <p>support@btc100ktoken.io</p>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <div class="copyright">
+                <p>Copyright © 2024 100K BTC. All Rights Reserved</p>
+            </div>
+        </section>
+        
+        <script src="assets/javascript/jquery-3.2.1.slim.min.js"></script>
+        <script src="assets/javascript/popper.min.js"></script>
+        <script src="assets/javascript/bootstrap.min.js"></script>  
+    </body>
 </html>
