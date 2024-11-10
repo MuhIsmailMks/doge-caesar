@@ -1422,6 +1422,12 @@ img{
         line-height: 1.3vw;
         color: #FFFFFF;
     }
+
+    .chartText{
+        font-size: 4vw;
+        line-height: 8vw;
+        text-align: center;
+    }
     
     p {
         color: #FFF;
