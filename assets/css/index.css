@@ -579,7 +579,7 @@ img{
 }
 .countdown-content div{
     width: 24vw;
-    text-align: left;
+    /* text-align: left; */
 }
 .countdown-content p{
     color: #FFF;
