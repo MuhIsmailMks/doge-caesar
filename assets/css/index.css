@@ -684,11 +684,11 @@ img{
     width: 32vw;
 }
 .token-content .left{
-    text-align: left;
+    text-align: center;
     position: relative;
 }
 .token-content .right{
-    text-align: right;
+    text-align: center;
     position: relative;
 }
 /* ------------------yt-video-------
