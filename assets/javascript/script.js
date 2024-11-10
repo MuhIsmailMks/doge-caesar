@@ -46,6 +46,22 @@ function copyText() {
   window.getSelection().removeAllRanges();
 }
 
+// document.querySelector('.input-bg').addEventListener('click', function () {
+//   const input = document.getElementById('contractInput');
+//   const originalValue = input.value;  
+ 
+//   input.select();
+//   input.setSelectionRange(0, 99999); 
+ 
+//   document.execCommand('copy');
+  
+ 
+//   setTimeout(() => {
+//       input.value = originalValue;  
+//   }, 2000);
+// });
+
+
 // Function to format date and time
 function formatDateAndTime(dateString) {
   const date = new Date(dateString);
