@@ -671,7 +671,7 @@ img{
 .token-content .left::after{
     position: absolute;
     content: url(../images/line.png);
-    left: 16vw;
+    left: 14vw;
     top: 0vw;
 }
 .token-content .right::after{
@@ -681,7 +681,7 @@ img{
     top: 0vw;
 }
 .token-content div{
-    width: 32vw;
+    width: 37vw;
 }
 .token-content .left{
     text-align: center;
