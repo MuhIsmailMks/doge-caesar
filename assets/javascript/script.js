@@ -1,12 +1,4 @@
-// let header = document.querySelector(".navbar")
-// window.onscroll = (e)=> {
-//    if (window.pageYOffset > 100) {
-//       header.style.backgroundColor= "#911616";
-//     } else{
-//       header.style.backgroundColor = "transparent";
-//     }
-//  }
-
+ 
 
 const navbarToggle = document.querySelector(".navbar-toggle");
 const navbarLinks = document.querySelector(".center-menu");
