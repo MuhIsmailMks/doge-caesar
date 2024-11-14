@@ -2123,6 +2123,9 @@ img{
     z-index: -9999;
 }
 
+.countdown{
+    margin-top: 8vw;
+}
 
 @media screen and (max-width:600px) {
         .header .center-menu .right-side-menu a:not(a:nth-child(5)) img {
@@ -2130,5 +2133,8 @@ img{
             max-width: 8vw;
         }
 
+        .countdown{
+            margin-top: 15vw;
+        }
 
 }
