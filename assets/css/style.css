@@ -48,7 +48,7 @@ body {
   -o-transform: scale(1.1);
 }
 
-.socials a:nth-child(1){
+/* .socials a:nth-child(1){
   rotate: 9deg; 
 }
 
@@ -62,7 +62,7 @@ body {
 
 .socials a:nth-child(5){
   rotate: -12deg; 
-}
+} */
 
 .socials img{
   transition: .2s ease-in;
