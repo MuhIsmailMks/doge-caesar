@@ -90,3 +90,21 @@ body {
         padding: 0.8rem 0;
       }
 }
+
+
+.rotate_animation{
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+0%{
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+} 
+}
