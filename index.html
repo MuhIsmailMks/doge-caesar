@@ -1,410 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        
-        <title>bitcoin 100K token</title>
-        <link rel="icon" href="assets/images/favicon.png" />
-        
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/index.css" />
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link rel="stylesheet" href="assets/css/css2.css">
-        <link rel="stylesheet" href="assets/css/animate.min.css" />
-        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-        
-        <script type="text/javascript" src="assets/javascript/script.js?v=323" defer></script>
-    </head>
-    <body>
-        <!-- <div class="home" id="home"></div> -->
-        <section class="hero-section">
-            <header class="header">
-                <nav class="navbar">
-                    <diV class="left-side-menu">
-                        <a href="#home">
-                            <img src="assets/images/logo.png" alt="logo" title="" />
-                        </a>
-                    </diV>
-                    <div class="center-menu">
-                        <div class="left-menu">
-                            <a href="#about" class="tg" >
-                                <li>About</li>
-                            </a>
-                            <a href="#tokenomics" class="tg" > 
-                                <li>Tokenomics</li>
-                            </a>
-                            <a href="#htb" class="tg"> 
-                                <li>How To Buy</li>
-                            </a>
-                            <a href="#chart" class="tg"> 
-                                <li>Live Chart</li>
-                            </a>
-                       </div>
-                        <div class="right-side-menu">
-                            <a href="https://www.dextools.io?t=1713298705948"   class="new_link">
-                                <img src="./assets/images/sdq.png" alt="logo">
-                            </a>
-                            <a href="https://etherscan.io/">
-                                <img src="assets/images/cmc.png" alt="logo">
-                            </a>
-                            <a href="https://x.com/BTC100KToken">
-                                <img src="assets/images/TWITTER.png" alt="logo">
-                            </a>
-                            <a href="https://t.me/BTC100KToken">
-                                <img src="assets/images/TELEGRAM.png" alt="logo">
-                            </a>
-                            <a href="https://app.uniswap.org/">
-                                <img src="assets/images/buy-btc.png" alt="logo">
-                            </a>
-                            
-                        </div>
-                    </div>
-                    <div class="navbar-toggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </nav>
-            </header>
-            <img src="assets/images/c-1.png" alt="" class="c-1">
-            <img src="assets/images/c-2.png" alt="" class="c-2">
-            <img src="assets/images/c-3.png" alt="" class="c-3">
-            <div class="heading">
-                <img src="assets/images/heading.png" alt="">
-            </div>
-        </section>
-        
-        <section class="ca">
-            <img src="assets/images/C-4.png" alt="" class="c-4">
-            <div class="input-bg">
-                <input type="text" id="contractInput" value="Contract: 00000000000000000000000000000DEAD"  >
-            </div>
-            <div class="btn-group">
-                <a href="https://www.dextools.io">
-                    <img src="assets/images/dextool-btn.png" alt="">
-                </a>
-                <a href="https://app.uniswap.org/">
-                    <img src="assets/images/buy-btc.png" alt="">
-                </a>
-            </div>
-        </section>
-         
-        
-        <section class="countdown"  >
-            <img src="assets/images/c-1.png" alt="" class="c-6">
-            <h3>LIVE $Bitcoin 100K token COUNTDOWN</h3>
-            <h5 class="text-notices" id="notify">loading live data...</h5>
-            <div class="countdown-content">
-                <div class="hiddenElement">
-                    <p>Predicted Date</p>
-                    <h5 id="dateEst">-</h5>
-                    <p id="timeEst">-</p>
-                </div>
-                <div class="hiddenElement">
-                    <p>Est. Time Remaining</p>
-                    <h5 id="countdown">-</h5>
-                    <p>DAYS &nbsp;&nbsp;&nbsp;&nbsp; HOURS&nbsp;&nbsp; MINS &nbsp;&nbsp;SECS</p>
-                </div>
-                <div class="hiddenElement">
-                    <p>Blocks Remaining</p>
-                    <h5 id="blockLeft">-</h5>
-                    <p>TARGET #840,000</p>
-                </div>
-                <div>
-                    <p>Bitcoin Price</p>
-                    <h5 id="btcPrice">$<span id="priceChange"></span></h5>
-                    <p>LIVE</p>
-                </div>
-            </div>
-        </section>
-        
-        <section class="tokenomics" id="tokenomics">
-            <img src="assets/images/btc.png" alt="" class="btc-2">
-            <img src="assets/images/btc-invert.png" alt="" class="btc-3">
-            <img src="assets/images/c-2.png" alt="" class="c-7">
-            <img src="assets/images/token-heading.png" alt="" class="token-heading">
-            <img src="assets/images/token-img.png" alt="" class="token-img">
-            <div class="token-content">
-                <div class="left">
-                    <p>Total Supply:</p>
-                    <h4>100,000 $BTC</h4>
-                </div>
-                <div class="center">
-                    <p>Liquidity:</p>
-                    <h4>100,000</h4>
-                </div>
-                <div class="right">
-                    <p>Team tokens</p>
-                    <h4>0</h4>
-                </div>
-            </div>
-        </section>
-        
-        <section class="photos">
-            <div class="library-1">
-                <div class="slider">
-                    <div class="slide-track">
-                        <div class="slide">
-                            <img src="assets/images/img-1.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-2.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-3.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-4.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-5.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-1.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-2.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-3.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-4.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-5.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-1.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-2.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-3.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-4.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-5.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-1.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-2.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-3.png" alt="slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="library-2">
-                <div class="slider">
-                    <div class="slide-track slide-track1">
-                        <div class="slide">
-                            <img src="assets/images/img-6.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-7.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-8.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-9.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-10.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-6.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-7.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-8.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-9.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-10.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-6.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-7.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-8.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-9.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-10.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-6.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-7.png" alt="slide">
-                        </div>
-                        <div class="slide">
-                            <img src="assets/images/img-8.png" alt="slide">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section class="chart" id="chart">
-            <img src="assets/images/chart-heading.png" alt="" class="chart-heading">
-            <div class="chart-content">
-                <div class="left">
-                    <div class="inner-left">
-                        <iframe height="600px" width="100%" id="geckoterminal-embed" title="GeckoTerminal Embed" src="https://www.geckoterminal.com/eth/pools/0x2260fac5e5542a773aa44fbcfedf7c193bc2c599?embed=1&info=0&swaps=0" frameborder="0" allow="clipboard-write" allowfullscreen></iframe>
-                    </div>
-                </div>
 
-                <div class="right">
-                    <iframe src="https://app.uniswap.org/" frameborder="0"></iframe>
-                    <a href="https://app.uniswap.org/">
-                        <img src="assets/images/swap-btn.png" alt="" class="swap">
-                    </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">  
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+      <!-- AOS scroll effect cdn --> 
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- tailwind css cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>PANDA</title>
+</head>
+
+<body>
+
+    
+    <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden bg-[#FFB000] pb-[100px]">
+
+        <nav class="relative top-0 w-full z-20 start-0 bg-[#FFB000]">
+
+            <div
+              class="max-w-[2000px] flex flex-wrap items-center justify-between mx-auto p-4 lg:px-10"
+            >
+              <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <img 
+                  src="./assets/images/bir.png"
+                  class="h-12 lg:h-16 float_animation"
+                  style="animation-delay: -3s;"
+                  alt="Flowbite Logo"
+                />
+                <span
+                  class="self-center text-[15px] lg:text-[40px] font-semibold whitespace-nowrap text-black tracking-wide cooperFont"
+                  >PANDA</span
+                >
+              </a>
+     
+              <div class="absolute left-[50%] translate-x-[-50%] w-[50%] h-full  flex justify-center items-center gap-3 lg:gap-6">
+
+                <a href="#tele" class="w-[35px] lg:w-[60px] h-auto">
+                    <img src="./assets/images/telegram.svg" alt="" class="w-full h-auto">
+                </a>
+
+                <a href="#twitter" class="w-[35px] lg:w-[60px] h-auto">
+                    <img src="./assets/images/twitter.svg" alt="" class="w-full h-auto">
+                </a>
+
+              </div>
+     
+    
+              <div class="relative ">
+                <button class="w-[110px] md:w-[150px] h-[45px] md:h-[50px] bg-black text-white rounded-full hover:scale-110 duration-100 text-[16px] lg:text-[22px]">Get</button>
+              </div>
+    
+            </div>
+
+        </nav>
+
+        <section class="hero flex items-center flex-col   gap-7 pb-[60px]"> 
+            
+             <div class="logo relative w-[50%] lg:w-[40%] h-auto object-contain flex_center" 
+             data-aos="fade-up"
+             data-aos-duration="800"
+             data-aos-delay="300">
+                <img src="./assets/images/track.png" alt="heroImage" class="w-full h-auto float_animation relative z-10">
+                
+                <div class="w-[60%] h-auto  absolute rotate-[29deg] left-[80%]">
+                  <img src="./assets/images/gigitbnc.png" alt="heroImage" class="w-full" data-aos="fade-right"
+                  data-aos-duration="800"
+                  data-aos-delay="300">
                 </div>
                 
-            </div>
+                <div class="w-[60%] h-auto  absolute rotate-[-29deg] right-[80%]">
+                  <img src="./assets/images/mikir.png" alt="heroImage" class="w-full" data-aos="fade-left"
+                  data-aos-duration="800"
+                  data-aos-delay="300">
+                </div>
+                
+
+                
+             </div>
+
+             <div class="flex_center flex-col text-[30px]">
+                <h2 class=" text-[70px]">GET A PANDA</h2>
+                <p>The golden CHild of solana</p>
+             </div>
+      
+             <div class="social flex_center gap-4 flex-wrap" 
+             >
+              <a href="" target="_blank" class="buttonStyling rotate-12">BSCSCAN</a>
+              <a href="https://x.com" target="_blank" class="buttonStyling rotate-6">TWITTER</a>
+              <a href="https://t.me" target="_blank" class="buttonStyling rotate-[-16deg]">JOIN COMMUNITY</a> 
+             </div>
+      
+       
+      
         </section>
-        
-        <section class="htb" id="htb">
-            <img src="assets/images/c-1.png" alt="" class="c-9">
-            <img src="assets/images/btc-invert.png" alt="" class="btc-5">
-            <img src="assets/images/btc.png" alt="" class="btc-6">
-            <img src="assets/images/dog.png" alt="" class="dog">
-            <img src="assets/images/coin.png" alt="" class="coin">
-            <img src="assets/images/htb-heading.png" alt="" class="htb-heading">
-            <div class="htb-content">
-                <div class="process pro-1">
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <p>Download and set up a compatible wallet, such as MetaMask or Trust Wallet.</p>
-                    </div>
-                </div>
-                <div class="process pro-2">
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <p>Purchase Ethereum (ETH) on a cryptocurrency exchange and transfer it to your wallet.</p>
-                    </div>
-                </div>
-                <div class="process pro-3">
-                    <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <p>Visit a decentralized exchange like Uniswap and connect your wallet.</p>
-                    </div>
-                </div>
-                <div class="process pro-4">
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <p>Select 100K Bitcoin Token</p><br>
-                        <p>amount you'd like to buy. The official tokenaddress to import is:</p>
-                        <p class="ca" id="paragraphToCopy">00000000000000000000000000000DEAD <span  onclick="copyText()"><svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
-                            <path d="M5.7 5.4V1.8C5.7 0.81 6.555 0 7.6 0H17.1C17.6039 0 18.0872 0.189642 18.4435 0.527208C18.7998 0.864773 19 1.32261 19 1.8V10.8C19 11.2774 18.7998 11.7352 18.4435 12.0728C18.0872 12.4104 17.6039 12.6 17.1 12.6H13.3V16.2C13.3 16.6774 13.0998 17.1352 12.7435 17.4728C12.3872 17.8104 11.9039 18 11.4 18H1.9C1.39609 18 0.912816 17.8104 0.556497 17.4728C0.200178 17.1352 0 16.6774 0 16.2V7.2C0 6.21 0.855 5.4 1.9 5.4H5.7ZM7.6 5.4H11.4C11.9039 5.4 12.3872 5.58964 12.7435 5.92721C13.0998 6.26477 13.3 6.72261 13.3 7.2V10.8H17.1V1.8H7.6V5.4ZM1.9 7.2V16.2H11.4V7.2H1.9Z" fill="black"/>
-                          </svg></span></p>
-                    </div>
-                </div>
-                <div class="process pro-5">
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <p>Review the transaction details, confirm the swap, and enjoy BTC!</p>
-                    </div>
-                </div>
-                <p class="note">*Please note that trading fees and slippage may apply during the purchase process.</p>
+
+        <section id="tokenomics" class="tokenomics bg-[#1D1D1D] py-[75px] flex_center flex-col gap-[25px]">
+            <h2 class="mediumStroke text-white text-[10vw] boldShadow text-center max-md:my-[30px]" 
+            data-aos="fade-up" 
+            data-aos-duration="700"
+            data-aos-delay="300">Tokenomics</h2>
+      
+            <div class="supplyContainer flex_center gap-[2vw] font1">
+              <div class="supply py-[.5vw] px-[1.5vw] bg-white border-black border-4 " 
+              data-aos="fade-right"
+              data-aos-duration="700"
+              data-aos-delay="100">
+                <p class="text-black text-[5vw]">1 Billion</p>
+              </div>
+              <p class="text-white text-[6vw] lg:text-[4vw]" 
+              data-aos="fade-left" 
+              data-aos-duration="700"
+              data-aos-delay="200"> in total supply</p>
             </div>
-            <a href="https://app.uniswap.org/" target="_blank">
-                <img src="assets/images/buy-btc-2.png" alt="" class="buy-btc-2">
-            </a>
-        </section>
-        
-        <section class="footer-wrap">
-            <footer class="footer">
-                <div class="left">
-                    <a href="#">
-                        <img src="assets/images/logo-2.png" alt="logo">
-                    </a>
-                    <p>Lets celebrate BTC 100k together</p>
-                    <div class="social-link">
-                        <a href="https://x.com/BTC100KToken">
-                            <img src="assets/images/TWITTER.png" alt="">
-                        </a>
-                        <a href="https://t.me/BTC100KToken">
-                            <img src="assets/images/TELEGRAM.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="f1">
-                        <h3>Quick Links</h3>
-                        <a href="#about">
-                            <p>About</p>
-                        </a>
-                        <a href="#tokenomics">
-                            <p>Tokenomics</p>
-                        </a>
-                        <a href="#htb">
-                            <p>How To Buy</p>
-                        </a>
-                        <a href="#chart" class="tg"> 
-                            <li class="chartText">Live Chart</li>
-                        </a>
-                    </div>
-                    <div class="f2">
-                        <h3>Resources</h3>
-                        <a href="https://etherscan.io/">
-                            <p>Etherscan</p>
-                        </a>
-                        <a href="https://www.dextools.io">
-                            <p>Dextools</p>
-                        </a>
-                    </div>
-                    <div class="f3">
-                        <h3>Email</h3>
-                        <div class="social-link">
-                            <div class="socials" id="social">
-                                <a href="mailto:support@btchalvingtoken.io">
-                                    <p>support@bitcoin 100Ktoken.com</p>
-                                </a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <div class="copyright">
-                <p>Copyright © 2024 bitcoin 100K token. All Rights Reserved</p>
+       
+            <div class="image w-[90%] lg:w-[45%]">
+                <img src="./assets/images/bakarbncred.png" alt="bnc" class="w-full ">
+                
+                <p class="text-white mt-[30px] text-[15px] lg:text-[25px]">Lorem ipsum dolor sit amet consectet ur adipisicing elit. Placeat totam quod minus, deserunt nulla ullam quo, voluptas qui dicta facilis sapiente nobis nesciunt inventore labore quia, veritatis cum adipisci cumque!</p>
             </div>
+      
+            <div class="relative flex justify-center w-[90%] font1 mb-[5vw] mx-auto">
+              <div class="contract w-full lg:w-[70%] flex_center bg-white rounded-full text-[14px] lg:text-[2vw] border-black border-[.15vw] px-5 py-[1vw] mediumBoxShadow copy-box"  >
+                <p>CA:</p>
+                <span data-set="000000000000000000000" class="copy-box__text max-w-[80%] overflow-hidden text-ellipsis">000000000000000000000</span>
+                <img src="./assets/images/copyIcon.svg" alt="copyIcon" class="w-[25px] md:w-[40px] h-auto object-contain ml-[2vw]  cursor-pointer copy_address">
+              </div>
+            </div> 
+
         </section>
-        
-        <script src="assets/javascript/jquery-3.2.1.slim.min.js"></script>
-        <script src="assets/javascript/popper.min.js"></script>
-        <script src="assets/javascript/bootstrap.min.js"></script>  
-    </body>
+
+        <section class="memes w-full relative h-auto flex_center flex-col mt-[100px]">
+
+          <h2 class="mediumStroke  text-[10vw] boldShadow text-center max-md:my-[30px]">Memes</h2>
+
+          <div class="flex_center w-full gap-2 lg:gap-4 flex-wrap">   
+            
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/otot.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/makanpelangi.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/birred.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/tuangcoin.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/pijat.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/pegangbnc.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/love.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/buka.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white">
+              <img src="./assets/images/fuck.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white md:hidden">
+              <img src="./assets/images/minum.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
+            </div>
+
+
+          </div>
+
+       </section>
+
+        <section class="socials w-full h-auto relative flex_center flex-col gap-2 mt-[100px]">
+            
+          <h2 class="text-[60px] lg:text-[80px]">SOCIALS</h2>
+            <p class="text-[20px] lg:text-[20px]">Join the PONKE ARMY</p>
+
+            <div class="socials flex_center gap-10 mt-[10px]">
+
+              <a href="#twitter" class="relative ">
+                <img src="./assets/images/twitter.svg" alt="twitter" class="w-[35px] md:w-[46px] lg:w-[70px] h-auto object-contain">
+              </a>
+
+              <a href="#twitter" class="relative ">
+                <img src="./assets/images/telegram.svg" alt="telegram" class="w-[35px] md:w-[46px] lg:w-[70px] h-auto object-contain">
+              </a>
+
+              <a href="#twitter" class="relative ">
+                <img src="./assets/images/dex_black.png" alt="dex_white" class="w-[35px] md:w-[46px] lg:w-[66px] h-auto object-contain">
+              </a>
+
+              <a href="#bscan" class="relative ">
+                <img src="./assets/images/bscan.svg" alt="twitter" class="w-[35px] md:w-[46px] lg:w-[70px] h-auto object-contain">
+              </a>
+
+            </div>
+
+            <div class="image max-lg:hidden left-0 absolute w-[30%] flex_center">
+              <img src="./assets/images/tinju.png" alt="tinju" class="w-[90%] lg:w-[60%]">
+            </div>
+
+            <div class="image max-lg:hidden right-0 absolute w-[30%] flex_center">
+              <img src="./assets/images/rokok.png" alt="tinju" class="w-[90%] lg:w-[60%]">
+            </div>
+
+            
+            <div class="image w-full relative left-0 lg:hidden flex_between bg-[#FFB000]">
+              <img src="./assets/images/tinju.png" alt="tinju" class="w-[40%]">
+              <img src="./assets/images/rokok.png" alt="tinju" class="w-[40%]">
+            </div>
+
+        </section>
+
+    </div>
+
+     <!-- aos js library animation -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+
+     //  scroll animation Effect
+    AOS.init({
+        once: true
+    });
+  
+    // copy address
+    const copybtn = document.querySelector(".copy_address");
+    
+     copybtn.addEventListener("click", function() { 
+        let textSpan = document.querySelector('.copy-box__text');
+        let intervalId;
+            let addressText = document.querySelector(".copy-box__text").getAttribute('data-set');
+            textSpan.innerHTML = 'COPIED';
+
+            if (intervalId) {  
+                clearInterval(intervalId);
+            }
+
+            intervalId = setInterval(() => {
+                textSpan.innerHTML = 'COPY'; 
+                clearInterval(intervalId);  
+            }, 1000);
+
+            navigator.clipboard.writeText(addressText);
+        }); 
+
+    </script>
+</body>
 </html>
