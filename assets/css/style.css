@@ -9,11 +9,14 @@ html{
 }
 
 :root{
-  --primary-clr:#0689c5;
+  --primary-clr:#F8C641;
 }
 
 body {
   font-family: "Rammetto One", sans-serif;
+  background-image: url('../images/COINK.png');
+  background-repeat: repeat;
+  background-size: 200px 200px;
 }
 
 .jua_font{
