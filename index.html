@@ -1,294 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.png"
+    />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon.png">  
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
-      <!-- AOS scroll effect cdn --> 
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Rammetto+One&display=swap" rel="stylesheet">
+
+    <!-- AOS scroll effect cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
     <!-- tailwind css cdn -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- css link -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Biaoqing</title>
-</head>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Minions</title>
+  </head>
 
-<body>
-
+  <body>
     
-    <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden bg-[#FFB000] xl:pb-[20px]">
+    <div class="container_site w-full h-auto relative max-w-[100%] overflow-hidden flex_center flex-col gap-[170px]">
 
-        <nav class="relative top-0 w-full z-20 start-0 ">
+      <div class="box-container w-full h-auto bg-white flex items-center flex-col pb-[40px] relative">
 
-            <div
-              class="max-w-[2000px] flex flex-wrap items-center justify-between mx-auto p-4 lg:px-10"
-            >
-              <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img 
-                  src="./assets/images/bir.png"
-                  class="h-12 lg:h-16 float_animation"
-                  style="animation-delay: -3s;"
-                  alt="Flowbite Logo"
-                />
-                <span
-                  class="self-center text-[15px] lg:text-[40px] font-semibold whitespace-nowrap text-black tracking-wide cooperFont"
-                  >Biaoqing</span
-                >
-              </a>
-     
-              <div class="absolute left-[50%] translate-x-[-50%] w-[50%] h-full  flex justify-center items-center gap-3 lg:gap-6">
+        <div class="bg absolute left-0 top-0 w-full h-full">
+          <img src="./assets/images/bgHero.png" alt="" class="w-full h-full">
+        </div>
 
-                <a target="_blank" href="
-                https://t.me/biaoqingBSC" class="w-[35px] lg:w-[60px] h-auto duration-100 hover:scale-110">
-                    <img src="./assets/images/telegram.svg" alt="" class="w-full h-auto">
-                </a>
+        <header class="w-full h-[80px] relative top-[20px] flex_center">
 
-                <a target="_blank" href="https://x.com/BiaomemeBSC" class="w-[35px] lg:w-[60px] h-auto duration-100 hover:scale-110">
-                    <img src="./assets/images/twitter.svg" alt="" class="w-full h-auto">
-                </a>
+          <nav class="max-w-[2000px] w-[90%] h-full flex_between px-3 lg:px-10 bg-[#fff]">
+  
+              <!-- left -->
+               <div class="flex_center gap-2 sm:gap-4 obilex_font ">
+                  <!-- logo -->
+                   <!-- <img src="./static/images/logo.png" alt="" class="h-auto object-contain w-[40px] lg:w-[5vw] max-w-[400px]" 
+                   > -->
+                  <p class="text-white medium_stroke text-[18px] lg:text-[23.74px]">$MINI</p>
+               </div>
+  
+              <!-- right -->
+               <div class="flex_center gap-6" > 
+                  <ul class="flex items-center gap-6 max-lg:hidden">
+                      <li><a href="#home" class="text-[#000] thin_stroke text-[19px] duration-300 hover:text-[#0689c5]">Home</a></li>
+                      <li><a href="#about" class="text-[#000] thin_stroke text-[19px] duration-300 hover:text-[#0689c5]">About us</a></li>
+                      <li><a href="#howtobuy" class="text-[#000] thin_stroke text-[19px] duration-300 hover:text-[#0689c5]">How To Buy</a></li>
+                      <li><a href="#memes" class="text-[#000] thin_stroke text-[19px] duration-300 hover:text-[#0689c5]">Memes</a></li>
+                  </ul>
+  
+                 <!-- buy btn -->
+                <div class="max-lg:hidden">
+                  <a target="_blank" href="
+                  https://uniswap.org" class="bg-[#0689c5] duration-200 hover:scale-105 flex_center rounded-md w-auto h-[50.08px] max-lg:h-[45px] relative  border-black border-[2px] px-6"> 
+                      <span class="text-[14px] uppercase">BUY</span>
+                     </a>
+                </div>
+  
+                 <!-- menu btn -->
+                 <div class=" lg:hidden"  >
+                  <div class="menu-button duration-200 hover:scale-105 flex_center flex-col gap-1 rounded-md w-[45px] h-[45px] relative gradient_btn border-black border-[1px]" >
+                      <span class="w-[70%] h-1 bg-black rounded-md"></span>
+                      <span class="w-[70%] h-1 bg-black rounded-md"></span>
+                      <span class="w-[70%] h-1 bg-black rounded-md"></span>
+                  </div>
+                 </div>
+  
+               </div>
+  
+               <!-- menu -->
+                <div class="menu_container absolute left-[50%] translate-x-[-50%] w-[90%] h-auto bg-[#fff] rounded-lg border-[#0689c5] border-[2px] py-6" >
+                  <ul class="flex_center gap-6 flex-col">
+                    <li><a href="#home" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#0689c5]">Home</a></li>
+                    <li><a href="#about" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#0689c5]">About us</a></li>
+                    <li><a href="#howtobuy" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#0689c5]">How To Buy</a></li>
+                    <li><a href="#about" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#0689c5]">Memes</a></li>
+                      <li class="flex_center gap-6">
+  
+                          <div >
+                            <a target="_blank" href="
+                            https://uniswap.org" class="bg-[#0689c5] duration-200 hover:scale-105 flex_center rounded-md w-auto h-[56.08px] max-lg:h-[45px] relative  border-black border-[2px] px-6"> 
+                                <span class="text-[14px] uppercase">BUY</span>
+                               </a>
+                          </div>
+  
+                      </li>
+                  </ul>
+                </div>
+  
+          </nav>
+  
+       </header>
 
+       <div class="relative z-10 hero flex_center flex-col gap-4 w-full">
+
+        <img src="./assets/images/hero.png" alt="hero" class="w-[90%] lg:w-[30%] h-auto max-w-[1000px]">
+
+        <div class="bg-white border-[1px] border-[#0689c5] rounded-lg px-7 py-2 flex_center gap-4 max-w-[90%]">
+          <p data-set="000000000000000000000000000000000" class="copy-box__text text-ellipsis overflow-hidden max-w-[80%] xl:max-w-[100%]">000000000000000000000000000000000</p>
+          <button class="copy_btn cursor-pointer hover:scale-110 duration-150 copy_address">
+            <img src="./assets/images/copyIcon.svg" alt="" class="w-[30px] h-auto">
+          </button>
+        </div>
+
+        <div class="btns w-full h-auto relative flex items-center flex-wrap gap-[20px] justify-center xl:mt-[5rem]">
+          <div class="relative max-[1024px]:w-full flex justify-center w-[30%] min-[1500px]:w-[500px]"  >
+          <button class="uppercase border-2 border-[#0689c5] w-[80%] max-[1024px]:max-w-[500px] xl:max-w-[500px] relative bg-[#fff] text-[19px] lg:text-[21px] py-7 rounded-lg">
+              suppy: 1B
+          </button>
+          </div>
+          <div class="relative max-[1024px]:w-full flex justify-center w-[30%] min-[1500px]:w-[500px]"  >
+            <button class="uppercase border-2 border-[#0689c5] w-[80%] max-[1024px]:max-w-[500px] xl:max-w-[500px] relative bg-[#fff] text-[19px] lg:text-[21px] py-7 rounded-lg">
+              lP : lIQUIDITY BURNT
+          </button>
+          </div>
+          <div class="relative max-[1024px]:w-full flex justify-center w-[30%] min-[1500px]:w-[500px]"  >
+          <button class="uppercase border-2 border-[#0689c5] w-[80%] max-[1024px]:max-w-[500px] xl:max-w-[500px] relative bg-[#fff] text-[19px] lg:text-[21px] py-7 rounded-lg">
+              TAX 0%
+          </button>
+          </div>
+         
+      </div>
+
+       </div>
+
+      </div>
+
+      <div class="box-container w-full h-auto bg-[#dafff4] flex items-center flex-col gap-[50px] ">
+
+        <section id="about" class="about flex_center flex-col gap-6 w-full">
+          <div class="image relative flex_center"><img src="./assets/images/hero.png" alt="hero" class="w-[90%] lg:w-[30%] h-auto"></div>
+
+          <div class="content flex_center flex-col text-center gap-4">
+            <h2 class="text-[#0689c5] medium_shadow medium_stroke text-[8vw] lg:text-[47px]">About Minions</h2>
+            <p class="text-[19px] w-[90%] lg:w-[80%] jua_font max-w-[1200px] ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa at iste aut dolorem sapiente obcaecati libero soluta blanditiis quidem eveniet praesentium, architecto, asperiores eos earum hic dolor quod, illum deleniti! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quasi et maxime officiis excepturi optio quod iusto aliquam, ea voluptatum voluptatem totam dicta eligendi cumque? Explicabo perferendis aspernatur blanditiis ipsum!</p>
+
+            <div class="relative max-[1024px]:w-full flex justify-center w-[30%] min-[1500px]:w-[500px]"  >
+              <button class="uppercase border-2 border-[#0689c5] w-[50%] lg:w-[70%] max-[1024px]:max-w-[500px] relative bg-[#fff] lg:text-[21px] py-2 rounded-2xl">
+                  CHART
+              </button>
               </div>
-     
-    
-              <div class="relative ">
-                <button class="w-[110px] md:w-[150px] h-[45px] md:h-[50px] bg-black text-white rounded-full hover:scale-110 duration-100 text-[16px] lg:text-[22px]">Get</button>
-              </div>
-    
+          </div>
+
+        </section>
+         
+        <section class="build flex_center flex-col gap-6 w-[90%] lg:w-[80%] border-black bg-white py-5 max-w-[1400px]">
+          <h2 class="text-center text-[25px] lg:text-[45px]">We need to build it!</h2>
+
+          <div class="flex_center w-full flex-wrap gap-4">
+            <div class="w-[90%] lg:w-[40%]">
+              <img src="./assets/images/bnb.webp" alt="" class="w-full h-auto rounded-lg">
             </div>
-
-        </nav>
-
-        <section class="hero flex items-center flex-col   gap-7 pb-[50px] lg:pb-[100px]"> 
-            
-             <div class="logo relative w-[50%] lg:w-[40%] h-auto object-contain flex_center min-h-[250px]" 
-             data-aos="fade-up"
-             data-aos-duration="800"
-             data-aos-delay="300">
-
-                <img src="./assets/images/welcome.png" alt="heroImage" class="w-full h-auto float_animation relative z-10">
-
-                <div class="absolute w-[100vw] md:w-[1000px] h-[100vw] md:h-[1000px] xl:w-[330vw] xl:h-[95vw] object-contain z-0" data-aos="zoom-in"
-                data-aos-duration="1000"
-                data-aos-delay="1000">
-                    <img src="./assets/images/rotate_img.svg" alt="" class="absolute  w-full h-full rotate_animation">
-                </div>
-                
-                <div class="w-[60%] h-auto  absolute rotate-[29deg] left-[80%]">
-                  <img src="./assets/images/gigitbnc.png" alt="heroImage" class="w-full"  >
-                </div>
-                
-                <div class="w-[60%] h-auto  absolute rotate-[-29deg] right-[80%]" >
-                  <img src="./assets/images/mikir.png" alt="heroImage" class="w-full" >
-                </div>
-                
-
-                
-             </div>
-
-             <div class="flex_center text-center flex-col text-[30px] relative z-10">
-                <h2 class="text-[50px] lg:text-[70px]">GET A  $BIAO</h2>
-                <p>
-                  The most popular memes on BSC!</p>
-             </div>
-      
-             <div class="social flex_center gap-12 lg:gap-10 flex-wrap relative z-10 max-lg:mt-[40px]" 
-             >
-              <a href="https://bscscan.com/token/0xbb1ffb44d0064becfb77e6e189e22fdb668561e9" target="_blank" class="buttonStyling rotate-12">BSCSCAN</a>
-              <a href="https://x.com/BiaomemeBSC" target="_blank" class="buttonStyling rotate-6">TWITTER</a>
-              <a href="https://t.me/biaoqingBSC" target="_blank" class="buttonStyling rotate-[-16deg]">JOIN COMMUNITY</a> 
-             </div>
-      
-       
-      
+            <div class="w-[90%] lg:w-[40%]">
+              <img src="./assets/images/hero.png" alt="" class="w-full h-auto rounded-lg">
+            </div>
+          </div>
         </section>
 
-        <section id="tokenomics" class="tokenomics bg-[#1D1D1D] py-[55px] flex_center flex-col gap-[25px]">
-            <h2 class="mediumStroke text-white text-[10vw] boldShadow text-center max-md:my-[30px]" 
-            data-aos="fade-up" 
-            data-aos-duration="700"
-            data-aos-delay="300">Tokenomics</h2>
-      
-            <div class="supplyContainer flex_center gap-[2vw] font1">
-              <div class="supply py-[.5vw] px-[1.5vw] bg-white border-black border-4 " 
-              data-aos="fade-right"
-              data-aos-duration="700"
-              data-aos-delay="100">
-                <p class="text-black text-[5vw]">1 Billion</p>
+      </div>
+     
+      <div class="box-container w-full h-auto bg-[#bffaf5] flex items-center flex-col gap-[50px] pt-[100px] pb-4">
+ 
+        <section id="howtobuy" class="howtobuy flex_center flex-wrap-reverse gap-6 w-full">
+          
+          <div class="bobonbsc w-[93%] xl:w-[500px] h-[700px] lg:h-[800px] border-black border-[10px] rounded-xl">
+            <!-- <iframe src="https://pancakeswap.finance/?outputCurrency=0x4f863274e5a7bb1958f3d8891d7635c72c44f0fe" width="100%" height="100%" style="border:none;"></iframe> -->
+          </div>
+
+         <div class="relative w-[90%] xl:w-[40%] flex_center flex-col gap-10">
+          
+          <div class="howto-content w-full h-auto relative flex_center gap-4 bg-white border-black rounded-xl border-2 flex-col py-10 max-w-[1000px]">
+
+            <h2 class="text-[#0689c5] medium_shadow medium_stroke text-[27px] lg:text-[47px]">How To Buy</h2>
+
+            <div class="flex flex-col gap-4 w-[90%] jua_font text-[18px]">
+              <div class="flex gap-3">
+                <img src="./assets/images/phase.svg" alt="" class="w-[30px]">
+                <p>Create a Wallet (e.g Metamask)</p>
               </div>
-              <p class="text-white text-[6vw] lg:text-[4vw]" 
-              data-aos="fade-left" 
-              data-aos-duration="700"
-              data-aos-delay="200"> in total supply</p>
-            </div>
-       
-            <div class="image w-[90%] lg:w-[45%]">
-                <img src="./assets/images/bakarbncred.png" alt="bnc" class="w-full" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="100">
-                
-                <p class="text-white mt-[30px] text-[15px] lg:text-[25px] text-center" data-aos="fade-up"
-                data-aos-duration="800"
-                data-aos-delay="300">
-                Biaoqing (表情) is a Chinese word that literally means "facial expression." In the context of internet culture, it refers to a hugely popular type of meme in China. 
-                
-                Chinese version of emojis or GIFs, but with a distinct flavor tied to Chinese humor and trends.
-                
-                $BIAO its a whole subculture of digital expression think of it as a visual shorthand for feelings or jokes that words alone can’t nail down.</p>
-            </div>
-      
-            <div class="relative flex justify-center w-[90%] font1 mb-[5vw] mx-auto" data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="400">
-              <div class="contract w-full lg:w-[70%] flex_center bg-white rounded-full text-[14px] lg:text-[2vw] border-black border-[.15vw] px-5 py-[1vw] mediumBoxShadow copy-box"  >
-                <p>CA:</p>
-                <span data-set="0xbb1ffb44d0064becfb77e6e189e22fdb668561e9" class="copy-box__text max-w-[80%] overflow-hidden text-ellipsis">0xbb1ffb44d0064becfb77e6e189e22fdb668561e9</span>
-                <img src="./assets/images/copyIcon.svg" alt="copyIcon" class="w-[25px] md:w-[40px] h-auto object-contain ml-[2vw]  cursor-pointer copy_address">
+              <div class="flex gap-3">
+                <img src="./assets/images/phase.svg" alt="" class="w-[30px]">
+                <p>Add BNB to your wallet</p>
               </div>
+              <div class="flex gap-3">
+                <img src="./assets/images/phase.svg" alt="" class="w-[30px]">
+                <p> Copy and paste the contract address in the widget.</p>
+              </div>
+              <div class="flex gap-3">
+                <img src="./assets/images/phase.svg" alt="" class="w-[30px]">
+                <p>Swap BNB for $MINI</p>
+              </div>
+              <div class="flex gap-3">
+                 <p>We recommend setting your slippage to at least 2%</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="links w-full h-auto flex_center flex-wrap gap-6">
+            <a href="#bscscan" class="w-[145px] md:w-[105px] h-auto aspect-square rounded-full bg-white flex_center border-[#0689c5] border-[3px]">
+              <span class="flex_center w-[80%] h-[80%] bg-[#0689c5] rounded-full">
+                <img src="./assets/images/bscscan.png" alt="" class="w-[70%"> 
+              </span>
+            </a>
+            <a href="#pancake" class="w-[145px] md:w-[105px] h-auto aspect-square rounded-full bg-white flex_center border-[#0689c5] border-[3px]">
+              <span class="flex_center w-[80%] h-[80%] bg-[#0689c5] rounded-full">
+                <img src="./assets/images/PancakeSwap.png" alt="" class="w-[70%]"> 
+              </span>
+            </a>
+            <a href="#pancake" class="w-[145px] md:w-[105px] h-auto aspect-square rounded-full bg-white flex_center border-[#0689c5] border-[3px]">
+              <span class="flex_center w-[80%] h-[80%] bg-[#0689c5] rounded-full">
+                <img src="./assets/images/dexscreen.svg" alt="dexscreen" class="w-[70%]" style="filter: invert(1);"> 
+              </span>
+            </a>
+            <a href="#dextools" class="w-[145px] md:w-[105px] h-auto aspect-square rounded-full bg-white flex_center border-[#0689c5] border-[3px]">
+              <span class="flex_center w-[80%] h-[80%] bg-[#0689c5] rounded-full">
+                <img src="./assets/images/dextools.png" alt="dextools" class="w-[70%]"> 
+              </span>
+            </a>
+          </div>
+
+         </div>
+
+        </section>
+
+        <section id="memes" class="memes w-full relative h-auto flex_center flex-col mt-[100px]">
+
+          <h2 class="mediumStroke text-[10vw] lg:text-[45px] boldShadow text-center max-md:my-[30px]"  >Memes</h2>
+
+          <div class="flex_center w-full gap-4 lg:gap-3 flex-wrap"  >   
+            
+            <div class="col w-[80%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
+              <img src="./assets/images/bgHero.png" alt="image" class="w-full h-auto object-contain bg-red-600 rounded-lg"> 
+            </div>
+
+            <div class="col w-[80%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
+              <img src="./assets/images/bgHero.png" alt="image" class="w-full h-auto object-contain bg-red-600 rounded-lg"> 
+            </div>
+
+            <div class="col w-[80%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
+              <img src="./assets/images/bgHero.png" alt="image" class="w-full h-auto object-contain bg-red-600 rounded-lg"> 
             </div> 
-
-        </section>
-
-        <section class="memes w-full relative h-auto flex_center flex-col mt-[100px]">
-
-          <h2 class="mediumStroke  text-[10vw] boldShadow text-center max-md:my-[30px]" data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="300">Memes</h2>
-
-          <div class="flex_center w-full gap-4 lg:gap-7 flex-wrap" data-aos="zoom-in"
-          data-aos-duration="800"
-          data-aos-delay="300">   
-            
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/otot.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/makanpelangi.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/birred.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/tuangcoin.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/pijat.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/pegangbnc.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/love.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/buka.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150">
-              <img src="./assets/images/fuck.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
-
-            <div class="col border-black border-[.2vw] w-[45%] md:w-[25%] h-auto bg-white hover:scale-105 cursor-pointer duration-150 md:hidden">
-              <img src="./assets/images/minum.png" alt="image" class="w-full h-auto object-contain bg-red-600"> 
-            </div>
 
 
           </div>
 
        </section>
 
-        <section class="socials w-full h-auto relative flex_center flex-col gap-2 mt-[100px]">
-            
-          <h2 class="text-[60px] lg:text-[80px]" data-aos="fade-up"
-          data-aos-duration="800"
-          data-aos-delay="100">SOCIALS</h2>
+       <footer class="w-[98%] h-auto bg-[#b4d0f5] rounded-2xl border-black border-4 overflow-hidden flex_center flex-col gap-4">
 
-          <p class="text-[20px] lg:text-[20px]" data-aos="fade-up"
-            data-aos-duration="800"
-          data-aos-delay="300">Join the  $BIAO  ARMY</p>
+        <div class="image flex_center">
+          <img src="./assets/images/hero.png" alt="hero image" class="w-[70%] md:w-[25%]">
+        </div>
 
-          <div class="socials flex_center gap-10 mt-[10px]">
+        <div class="social_footer flex_center flex-wrap gap-4">
+            <a href="#tele" class="flex_center cursor-pointer duration-150 hover:scale-105">
+               <span class="w-[80%] h-[80%] bg-[#0689c5] rounded-full flex_center">
+                <img src="./assets/images/telegram.svg" alt="telegram">
+               </span>
+            </a>
+            <a href="#twitter" class="flex_center cursor-pointer duration-150 hover:scale-105">
+               <span class="w-[80%] h-[80%] bg-[#0689c5] rounded-full flex_center">
+                <img src="./assets/images/twitter.svg" alt="twitterLogo">
+               </span>
+            </a>
+            <a href="#bscscan" class="flex_center cursor-pointer duration-150 hover:scale-105">
+               <span class="w-[80%] h-[80%] bg-[#0689c5] rounded-full flex_center">
+                <img src="./assets/images/bscscan_white.svg" alt="bscscan">
+               </span>
+            </a>
+            <a href="#dexscreen" class="flex_center cursor-pointer duration-150 hover:scale-105">
+               <span class="w-[80%] h-[80%] bg-[#0689c5] rounded-full flex_center">
+                <img src="./assets/images/dexscreen.svg" alt="dexscreen">
+               </span>
+            </a>
+        </div>
 
-              <a href="https://x.com/BiaomemeBSC" target="_blank" class="relative ">
-                <img src="./assets/images/twitter.svg" alt="twitter" class="w-[35px] md:w-[46px] lg:w-[70px] h-auto object-contain">
-              </a>
+        <div class="flex_center " > 
+          <ul class="flex items-center gap-4 lg:gap-6">
+              <li><a href="#home" class="text-[#000] thin_stroke text-[11px] md:text-[14px] duration-300 hover:text-[#0689c5]">Home</a></li>
+              <li><a href="#about" class="text-[#000] thin_stroke text-[11px] md:text-[14px] duration-300 hover:text-[#0689c5]">About us</a></li>
+              <li><a href="#howtobuy" class="text-[#000] thin_stroke text-[11px] md:text-[14px] duration-300 hover:text-[#0689c5]">How To Buy</a></li>
+              <li><a href="#memes" class="text-[#000] thin_stroke text-[11px] md:text-[14px] duration-300 hover:text-[#0689c5]">Memes</a></li>
+          </ul>
+       </div>
 
-              <a href="https://t.me/biaoqingBSC" target="_blank" class="relative ">
-                <img src="./assets/images/telegram.svg" alt="telegram" class="w-[35px] md:w-[46px] lg:w-[70px] h-auto object-contain">
-              </a>
+        <p class="jua_font">contact@minions.com</p>
 
-              <a href="https://dexscreener.com/bsc/0x3aF10CB2E8F570Ea793E762ce5429e37B4988497?__cf_chl_rt_tk=EAlA812BaUR3w_JtbBSjTFkDNscJsE0h9NJbinmoQkg-1740419149-1.0.1.1-YFqzIpVC9NDrm58wUA_SXZUIcLT0SWgo3.mlXJJrANw" target="_blank" class="relative ">
-                <img src="./assets/images/dex-screener-seeklogo.svg" alt="dex_white" class="w-[30px] md:w-[46px] lg:w-[60px] h-auto object-contain">
-              </a>
+        <div class="relative left-0 bottom-0 w-full h-[55px] bg-[#fff] flex_center">
+          <p class="text-center text-[12px] lg:text-[16px]">MINIONS THE BUILDER© 2024. ALL RIGHTS RESERVED.</p>
+        </div>
+       </footer>
 
-              <a href="https://www.dextools.io/app/bsc/pair-explorer/0x3aF10CB2E8F570Ea793E762ce5429e37B4988497" target="_blank" class="relative ">
-                <img src="./assets/images/dex_black.png" alt="twitter" class="w-[30px] md:w-[46px] lg:w-[60px] h-auto object-contain">
-              </a>
+      </div>
+      
 
-              <a href="https://bscscan.com/token/0xbb1ffb44d0064becfb77e6e189e22fdb668561e9https://bscscan.com/token/0xbb1ffb44d0064becfb77e6e189e22fdb668561e9https://bscscan.com/token/0xbb1ffb44d0064becfb77e6e189e22fdb668561e9" target="_blank" class="relative ">
-                <img src="./assets/images/bscan.svg" alt="twitter" class="w-[35px] md:w-[46px] lg:w-[70px] h-auto object-contain">
-              </a>
-
-          </div>
-
-            <div class="image max-lg:hidden left-[5vw] absolute w-[30%] flex_center">
-              <img src="./assets/images/tinju.png" alt="tinju" class="w-[90%] lg:w-[60%]">
-            </div>
-
-            <div class="image max-lg:hidden right-[5vw] absolute w-[30%] flex_center">
-              <img src="./assets/images/track.png" alt="tinju" class="w-[90%] lg:w-[60%]">
-            </div>
-
-            
-            <div class="image w-full relative left-0 lg:hidden flex_between bg-[#FFB000]">
-              <img src="./assets/images/tinju.png" alt="tinju" class="w-[40%]">
-              <img src="./assets/images/track.png" alt="tinju" class="w-[40%]">
-            </div>
-
-        </section>
 
     </div>
 
-     <!-- aos js library animation -->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- aos js library animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
+      //  scroll animation Effect
+      document.addEventListener("DOMContentLoaded", function () {
+        AOS.init({
+          once: true,
+        });
 
-     //  scroll animation Effect
-    AOS.init({
-        once: true
-    });
-  
-    // copy address
-    const copybtn = document.querySelector(".copy_address");
-    
-     copybtn.addEventListener("click", function() { 
-        let textSpan = document.querySelector('.copy-box__text');
+        // nav handler
+        const menu_btn = document.querySelector('nav .menu-button');
+        const menu_container = document.querySelector('nav .menu_container');
+
+        menu_btn.addEventListener('click', () => {
+            menu_btn.classList.toggle('active')
+            menu_container.classList.toggle('active')
+        })
+
+      });
+
+      // copy address
+      const copybtn = document.querySelector(".copy_address");
+      let textSpan = document.querySelector(".copy-box__text");
+
+      copybtn.addEventListener("click", function () {
         let intervalId;
-            let addressText = document.querySelector(".copy-box__text").getAttribute('data-set');
-            textSpan.innerHTML = 'COPIED';
+        let addressText = document
+          .querySelector(".copy-box__text")
+          .getAttribute("data-set");
+        textSpan.innerHTML = "COPIED";
 
-            if (intervalId) {  
-                clearInterval(intervalId);
-            }
+        if (intervalId) {
+          clearInterval(intervalId);
+        }
 
-            intervalId = setInterval(() => {
-                textSpan.innerHTML = '0xbb1ffb44d0064becfb77e6e189e22fdb668561e9'; 
-                clearInterval(intervalId);  
-            }, 2000);
+        intervalId = setInterval(() => {
+          textSpan.innerHTML = "000000000000000000000000000000000";
+          clearInterval(intervalId);
+        }, 2000);
 
-            navigator.clipboard.writeText(addressText);
-        }); 
-
+        navigator.clipboard.writeText(addressText);
+      });
+    
     </script>
-</body>
+  </body>
 </html>

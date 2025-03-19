@@ -1,12 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+ 
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --primary-clr:#0689c5;
 }
 
 body {
-  font-family: "Luckiest Guy", serif;
+  font-family: "Rammetto One", sans-serif;
+}
+
+.jua_font{
+  font-family: "Jua", sans-serif;
 }
 
 .flex_center {
@@ -22,47 +33,95 @@ body {
   background-color: #fcfac2;
 }
 
-.buttonStyling {
-  background-color: #df1212;
-  color: white;
-  box-shadow: 0 4px 2px black;
-  border: 1px solid black;
-  transition: 0.2s ease-in;
-  -webkit-transition: 0.2s ease-in;
-  -moz-transition: 0.2s ease-in;
-  -ms-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
-  font-size: 2vw;
-  padding: 0.5vw 1vw;
-
-  min-width: 250px;
-  text-align: center;
+.thin_stroke{
+  -webkit-text-stroke: .5px black;
 }
 
-.buttonStyling:hover {
-  color: #ffb000;
-  transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
+.medium_stroke{
+  -webkit-text-stroke: 1px black;
 }
 
-/* .socials a:nth-child(1){
-  rotate: 9deg; 
+.medium_shadow{
+  text-shadow: 3px 3px 0px black;
 }
 
-.socials a:nth-child(2){
-  rotate: 19deg; 
+/* navbar */
+.menu_container {
+  top: 50%;
+  opacity: 0;
+  z-index: -999;
+  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
 }
 
-.socials a:nth-child(3){
-  rotate: -4deg; 
+header nav{
+  border-radius: 10px;
+  border: 1px solid var(--primary-clr);
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
 
-.socials a:nth-child(5){
-  rotate: -12deg; 
-} */
+/* build */
+.build{
+  border-radius:10px 10px  0 0 ;
+  -webkit-border-radius:10px 10px  0 0 ;
+  -moz-border-radius:10px 10px  0 0 ;
+  -ms-border-radius:10px 10px  0 0 ;
+  -o-border-radius:10px 10px  0 0 ;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-right: 2px solid;
+}
+ 
+/* howtobuy */
+.howto-content{
+  box-shadow: 9px 9px 0 black;
+}
+
+.links a{
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+
+.links a:hover{
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+}
+
+
+/* footer */
+.social_footer a{
+  height: 70px;
+  width: 70px;
+  border: 4px solid var(--primary-clr);
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  background-color: white;
+}
+
+.social_footer a img{
+  width: 50%; 
+}
+
+/* other style */
+.socials a{
+  background-color: black;
+  padding: 10px;
+}
 
 .socials img{
   transition: .2s ease-in;
@@ -81,17 +140,33 @@ body {
 }
 
 
-@media screen and (max-width: 768px) {
-    .buttonStyling {
-        width: 45%;
-        min-width: 100px;
-        font-size: 0.9rem;
-        text-align: center;
-        padding: 0.8rem 0;
-      }
+.cex_link a{
+  background-color: black;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  padding: 2rem;
+  border: 2px solid rgba(255, 255, 255, 0.438);
+}
+
+@media screen and (max-width: 1023px) { 
+  .menu_container.active {
+    top: 110%;
+    opacity: 1;
+    z-index: 999;
+  }
+
+  .social_footer a{
+    height: 60px;
+    width: 60px;
+  }
 }
 
 
+
+/* animation */
 .rotate_animation{
   animation: rotate 10s linear infinite;
 }
@@ -107,4 +182,52 @@ body {
   -ms-transform: rotate(360deg);
   -o-transform: rotate(360deg);
 } 
+}
+
+.music span{
+  display: none;
+}
+
+.music.active span{
+  display: block;
+}
+
+ 
+.music .rotate-animation{
+  animation: rotate 7s linear infinite;
+  -webkit-animation: rotate 7s linear infinite;
+}
+
+
+.float_animation{
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+0% {
+  transform: translatey(0px);
+}
+50% { 
+  transform: translatey(-10px);
+}
+100% {
+  transform: translatey(0px);
+}
+}
+
+@keyframes rotate {
+  0%{
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  100%{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
 }
