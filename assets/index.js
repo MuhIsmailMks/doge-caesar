@@ -43,24 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    let iframe = document.querySelector("iframe");
-    
-    if ("IntersectionObserver" in window) {
-      let observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.src = entry.target.getAttribute("data-src");
-            observer.unobserve(entry.target); // Berhenti mengamati setelah dimuat
-          }
-        });
-      }, { threshold: 0.2 });
-
-      observer.observe(iframe);
-    } else {
-      // Fallback jika browser tidak mendukung Intersection Observer
-      iframe.src = iframe.getAttribute("data-src");
-    }
-
 });
 
 // copy address
