@@ -14,9 +14,11 @@ html{
 
 body {
   font-family: "Rammetto One", sans-serif;
-  background-image: url('../images/COINK.png');
+  background-image: url('../images/COINK.png') ;
   background-repeat: repeat;
-  background-size: 200px 200px;
+  background-position: 0 0, 50px 50px; 
+  background-size: 150px 150px, 200px 200px;
+
 }
 
 .jua_font{
@@ -237,4 +239,37 @@ header nav{
     -ms-transform: rotate(360deg);
     -o-transform: rotate(360deg);
 }
+}
+
+
+/* image slider */
+.wrapper{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  width: 100%;
+  max-width: 2526px;
+  margin: auto;
+  height: 300px; 
+  overflow: hidden;
+  position: relative;   
+}
+
+.item{
+  width: 300px;
+  height: 100%; 
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  position: absolute;
+  left: calc(300px * 10);
+  animation: scrollLeft 30s linear infinite;
+  -webkit-animation: scrollLeft 30s linear infinite;
+}
+
+@keyframes scrollLeft {
+  to{
+      left: -300px;
+  }
 }

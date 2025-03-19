@@ -32,6 +32,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+
+    const items = document.querySelectorAll('.wrapper .item');
+    const totalItems = items.length; 
+    const animationDuration = 30;  
+
+    items.forEach((item, i) => { 
+        const delay = (animationDuration / totalItems) * (totalItems - i) * -1;
+        item.style.animationDelay = `${delay}s`;
+    });
+
 });
 
 // copy address
