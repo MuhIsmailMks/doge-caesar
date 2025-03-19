@@ -66,6 +66,10 @@ header nav{
   -o-border-radius: 10px;
 }
 
+.menu-button.active span{
+  position: absolute;
+}
+
 /* build */
 .build{
   border-radius:10px 10px  0 0 ;
