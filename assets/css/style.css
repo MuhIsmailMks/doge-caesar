@@ -273,3 +273,21 @@ header nav{
       left: -300px;
   }
 }
+
+
+@media screen and (max-width:700px) {
+  .wrapper{
+    height: 200px;
+  }
+  
+  .item{
+    width: 200px;
+    left: calc(200px * 10);
+  }
+
+  @keyframes scrollLeft {
+    to{
+        left: -200px;
+    }
+  }
+}
