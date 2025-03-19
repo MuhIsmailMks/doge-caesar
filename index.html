@@ -420,44 +420,21 @@
 
     </div>
 
+    <div class="music fixed  bottom-[20px] right-[20px]  rounded-full w-[47px] lg:w-[70px] h-[47px] lg:h-[70px] bg-[#F8C641] border-black border-[3px] flex justify-center items-center z-50 cursor-pointer overflow-hidden">
+			<div class="icon w-[80%] h-auto object-contain">
+				<img src="./assets/images/musicIcon.svg" alt="" class="w-full h-auto rotate-animation">
+			</div>
+			<span class="bg-black w-[5px] h-full absolute rotate-45"></span>
+		</div>
+
+		<audio id="backgroundMusic" loop autoplay>
+			<source src="./assets/Despicable Me 2 _ Minions Banana Song (2013) SNSD TTS [ ezmp3.co ].mp3" type="audio/mpeg">
+			Your browser does not support the audio tag.
+		</audio>
+
     <!-- aos js library animation -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-      //  scroll animation Effect
-      document.addEventListener("DOMContentLoaded", function () {
-        AOS.init({
-          once: true,
-        });
-
-        // nav handler
-        const menu_btn = document.querySelector('nav .menu-button');
-        const menu_container = document.querySelector('nav .menu_container');
-
-        menu_btn.addEventListener('click', () => {
-            menu_btn.classList.toggle('active')
-            menu_container.classList.toggle('active')
-        })
-
-      });
-
-      // copy address
-      document.querySelectorAll(".copy_address").forEach((copybtn) => {
-          copybtn.addEventListener("click", function () {
-            let parent = this.closest("div");  
-            let textSpan = parent.querySelector(".copy-box__text");
-            let addressText = textSpan.getAttribute("data-set");
-
-            textSpan.innerHTML = "COPIED";
-
-            setTimeout(() => {
-              textSpan.innerHTML = "000000000000000000000000000000000";
-            }, 2000);
-
-            navigator.clipboard.writeText(addressText);
-          });
-        });
-
-    
-    </script>
+  
+    <script src="./assets/index.js"></script>
   </body>
 </html>
