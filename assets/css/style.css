@@ -9,7 +9,12 @@ html{
 }
 
 :root{
-  --primary-clr:#000000;
+  --primary-clr:#FDD895;
+  --secondary-clr:#4C3C32;
+}
+
+.border-primary{
+  border: 2px solid var(--primary-clr);
 }
 
 body {
@@ -53,9 +58,9 @@ body {
 
 .title{
   font-size: 6vw;
-  color: black;  
+  color: var(--secondary-clr);  
   text-shadow: 3px 3px 0px black;
-  -webkit-text-stroke: .5px #f0f0f0;
+  -webkit-text-stroke: .5px #1d1d1d;
 }
 
 .title.small{
@@ -65,9 +70,9 @@ body {
 .box_social a{
   height: 70px;
   width: 70px;
-  border: 2px solid var(--primary-clr);
+  border: 2px solid var(--secondary-clr);
   border-radius: 20px; 
-  background-color: white; 
+  background-color: #FFECCA; 
 }
 
 .box_social a:nth-child(1){
@@ -156,7 +161,24 @@ header nav{
   border-left: 2px solid;
   border-right: 2px solid;
 }
- 
+
+/* token */
+.token-content{
+  box-shadow: 9px 9px 0 black;
+} 
+
+.token{
+  border: 1px solid var(--secondary-clr);
+  padding: .75rem 1rem;
+  border-radius: 10px;
+  box-shadow: 5px 5px 0 black;
+  transition: .2s ease;
+}
+
+.token:hover{
+  box-shadow: 0px 0px 0 black;
+}
+
 /* howtobuy */
 .howto-content{
   box-shadow: 9px 9px 0 black;
@@ -345,7 +367,7 @@ header nav{
   .title{
     font-size: 10vw;
     text-align: center; 
-  -webkit-text-stroke: .3px #f0f0f0;
+  -webkit-text-stroke: .3px;
   }
 
   
