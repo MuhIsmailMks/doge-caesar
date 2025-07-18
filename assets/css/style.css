@@ -9,12 +9,11 @@ html{
 }
 
 :root{
-  --primary-clr:#F8C641;
+  --primary-clr:#000000;
 }
 
 body {
-  font-family: "Rammetto One", sans-serif;
-  background-image: url('../images/COINK.png') ;
+  font-family: "Rammetto One", sans-serif; 
   background-repeat: repeat;
   background-position: 0 0, 50px 50px; 
   background-size: 150px 150px, 200px 200px;
@@ -48,7 +47,38 @@ body {
 
 .medium_shadow{
   text-shadow: 3px 3px 0px black;
+  
 }
+
+
+.title{
+  font-size: 6vw;
+  color: black;  
+  text-shadow: 3px 3px 0px black;
+  -webkit-text-stroke: .5px #f0f0f0;
+}
+
+.title.small{
+  font-size: 4vw;
+}
+
+.social-link img {
+  transition: 0.2s ease-in-out;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+}
+
+.social-link:hover img {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+}
+
+
 
 /* navbar */
 .menu_container {
@@ -106,6 +136,20 @@ header nav{
   -moz-transform: scale(1.05);
   -ms-transform: scale(1.05);
   -o-transform: scale(1.05);
+}
+
+/* memes */
+.layout-image{
+    width: min(1000px ,100%);
+    margin: 0 auto;
+
+    columns: 4 300px;
+    column-gap: .5em;
+}
+
+.layout-image img{ 
+    display: block;
+    margin-bottom: .5em;
 }
 
 
@@ -192,22 +236,7 @@ header nav{
   -o-transform: rotate(360deg);
 } 
 }
-
-.music span{
-  display: none;
-}
-
-.music.active span{
-  display: block;
-}
-
  
-.music .rotate-animation{
-  animation: rotate 7s linear infinite;
-  -webkit-animation: rotate 7s linear infinite;
-}
-
-
 .float_animation{
   animation: float 3s ease-in-out infinite;
 }
@@ -275,7 +304,28 @@ header nav{
 }
 
 
+@media screen and (min-width:2000px) {
+  .title{
+    font-size: 120px; 
+  }
+
+  .title.small{
+    font-size: 80px;
+  }
+
+}
+
 @media screen and (max-width:700px) {
+  .title{
+    font-size: 10vw;
+    text-align: center; 
+  -webkit-text-stroke: .3px #f0f0f0;
+  }
+
+  .title.small{
+    font-size: 7vw;
+  }
+
   .wrapper{
     height: 200px;
   }
@@ -284,6 +334,16 @@ header nav{
     width: 200px;
     left: calc(200px * 10);
   }
+  
+  .layout-image {
+    width: min(90%, 100%);
+    margin: 0 auto;
+    columns: 2 100px;
+    column-gap: .5em;
+  } 
+
+
+  /* animation */
 
   @keyframes scrollLeft {
     to{
