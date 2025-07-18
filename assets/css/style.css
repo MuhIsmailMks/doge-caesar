@@ -62,6 +62,47 @@ body {
   font-size: 4vw;
 }
 
+.box_social a{
+  height: 70px;
+  width: 70px;
+  border: 2px solid var(--primary-clr);
+  border-radius: 20px; 
+  background-color: white;
+  
+}
+
+.box_social a:nth-child(1){
+  transform: rotate(7deg);
+}
+
+.box_social a:nth-child(2){
+  transform: rotate(-7deg);
+}
+
+.box_social a:nth-child(3){
+  transform: rotate(14deg);
+}
+
+.box_social a:nth-child(4){
+  transform: rotate(-19deg);
+}
+
+.box_social a:hover{
+ transform: rotate(0deg);
+ box-shadow: 0px 0px 0px black;
+}
+
+.box_social a img{
+  width: 80%;    
+  filter: brightness(0) invert(0);
+}
+
+
+.social-link{
+   border: .2vw solid #191919;
+   box-shadow: 5.42px 5.42px 0px -1.47px #191919,   11.78px 11.78px 1.47px -5.42px #00000033;
+}
+
 .social-link img {
   transition: 0.2s ease-in-out;
   -webkit-transition: 0.2s ease-in-out;
@@ -154,21 +195,7 @@ header nav{
 
 
 /* footer */
-.social_footer a{
-  height: 70px;
-  width: 70px;
-  border: 4px solid var(--primary-clr);
-  border-radius: 100px;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  -o-border-radius: 100px;
-  background-color: white;
-}
 
-.social_footer a img{
-  width: 50%; 
-}
 
 /* other style */
 .socials a{
