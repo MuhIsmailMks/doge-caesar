@@ -80,7 +80,7 @@
                </div>
   
                <!-- menu -->
-                <div class="menu_container absolute left-[50%] translate-x-[-50%] w-full h-auto bg-[#fff] rounded-lg border-[#000000] border-[2px] py-6" >
+                <div class="menu_container absolute left-[50%] translate-x-[-50%] w-full h-auto bg-[#FFECCA] rounded-lg border-[#000000] border-[2px] py-6" >
                   <ul class="flex_center gap-6 flex-col"> 
                     <li><a href="#about" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#000000]">About us</a></li>
                     <li><a href="#tokenomics" class="text-[#000] thin_stroke text-[16px] duration-300 hover:text-[#000000]">Tokenomics</a></li> 
@@ -102,9 +102,13 @@
   
        </header>
 
-       <section class="relative z-10 hero flex_center flex-col gap-4 w-full pt-[100px] md:pt-[70px]">
+       <section id="home" class="relative z-10 hero flex_center flex-col gap-4 w-full pt-[100px] md:pt-[70px]">
 
-        <img src="./assets/images/dogewelcome.png" alt="hero" class="w-[90%] lg:w-[30%] h-auto max-w-[1000px] rounded-full border-primary" data-aos="zoom-in"
+        <h1 class="hero-title" data-aos="fade-down"
+        data-aos-duration="800"
+        data-aos-delay="300">$Caesar</h1>
+
+        <img src="./assets/images/dogewelcome.png" alt="hero" class="w-[90%] sm:w-[70%] h-auto max-w-[1000px] rounded-full border-primary lg:hidden" data-aos="zoom-in"
         data-aos-duration="800"
         data-aos-delay="300">
 
@@ -121,6 +125,11 @@
                 <img src="./assets/images/twitter.svg" alt="twitterLogo">
                </span>
             </a>
+
+            <img src="./assets/images/dogewelcome.png" alt="hero" class="w-[40%] max-w-[1000px]  rounded-full border-primary max-lg:hidden" data-aos="zoom-in"
+           data-aos-duration="800"
+        data-aos-delay="300">
+
             <a target="_blank" href="https://bscscan.com/" class="flex_center social-link cursor-pointer duration-150 hover:scale-105">
                <span class="w-[80%] h-[80%] rounded-[40px] flex_center">
                 <img src="./assets/images/bscscan_white.svg" alt="bscscan">

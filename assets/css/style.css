@@ -56,11 +56,19 @@ body {
 }
 
 
+.hero-title{
+  font-size: 5vw;
+  letter-spacing: 2px;
+  color: var(--primary-clr);  
+  text-shadow: 5px 5px 0px var(--secondary-clr);
+  -webkit-text-stroke: .5px #1d1d1d;
+}
+
 .title{
   font-size: 6vw;
-  color: var(--secondary-clr);  
-  text-shadow: 3px 3px 0px black;
-  -webkit-text-stroke: .5px #1d1d1d;
+  color: var(--primary-clr);  
+  text-shadow: 5px 5px 0px var(--secondary-clr);
+  -webkit-text-stroke: .5px #080808;
 }
 
 .title.small{
@@ -353,10 +361,16 @@ header nav{
 }
 
 @media screen and (max-width:700px) {
+  .hero-title{
+    letter-spacing: 1px;
+    font-size: 10vw;   
+    -webkit-text-stroke: .3px #1d1d1d;
+  }
+
   .title{
     font-size: 10vw;
     text-align: center; 
-  -webkit-text-stroke: .3px;
+    -webkit-text-stroke: .3px;
   }
 
   
@@ -388,7 +402,6 @@ header nav{
 
 
   /* animation */
-
   @keyframes scrollLeft {
     to{
         left: -200px;
