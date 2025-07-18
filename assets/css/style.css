@@ -13,9 +13,6 @@ html{
   --secondary-clr:#4C3C32;
 }
 
-.border-primary{
-  border: 2px solid var(--primary-clr);
-}
 
 body {
   font-family: "Rammetto One", sans-serif; 
@@ -23,6 +20,14 @@ body {
   background-position: 0 0, 50px 50px; 
   background-size: 150px 150px, 200px 200px;
 
+}
+
+.border-primary{
+  border: 2px solid var(--primary-clr);
+}
+
+.white-svg{
+  filter: brightness(0) invert(0);
 }
 
 .jua_font{
