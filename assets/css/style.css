@@ -67,8 +67,7 @@ body {
   width: 70px;
   border: 2px solid var(--primary-clr);
   border-radius: 20px; 
-  background-color: white;
-  
+  background-color: white; 
 }
 
 .box_social a:nth-child(1){
@@ -347,6 +346,13 @@ header nav{
     font-size: 10vw;
     text-align: center; 
   -webkit-text-stroke: .3px #f0f0f0;
+  }
+
+  
+  .box_social a{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
   }
 
   .title.small{
