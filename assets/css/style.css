@@ -300,6 +300,8 @@ header nav{
 .item h4{
   font-size: 2rem;
   text-transform: uppercase;
+  animation: text_animation 1s ease-in-out infinite;
+  -webkit-text-stroke: 1px black;
 }
 
 .item:hover{
@@ -379,6 +381,13 @@ header nav{
     margin-bottom: .5em;
 }
 
+/* memes_footer */
+.memes_footer{
+    background-image: url('../images/texture2.png');
+  background-repeat: repeat-y;
+  background-position: left top;  
+  background-size: cover; 
+}
  
 /* other style */
 .socials a{
@@ -497,6 +506,25 @@ header nav{
     transform: rotate(-25deg);
   }
 }
+ 
+@keyframes text_animation {
+  0% {
+    color: black;
+  }
+  25% {
+    color: var(--orange-clr);
+  }
+  50% {
+    color: var(--primary-clr);
+  }
+  75% {
+    color: var(--orange-clr);
+  }
+  100% {
+    color: black;
+  }
+}
+
 
  
 /* media queries */
