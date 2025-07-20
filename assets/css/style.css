@@ -568,11 +568,17 @@ header nav{
   }
 
   .wrapper{
-    height: 40px;
+    height: 20px;
   }
   
   .item{ 
-    left: calc(200px * 18);
+    width: 100px;
+    left: calc(100px * 18);
+  }
+
+  .item h4{
+    font-size: 16px;
+    -webkit-text-stroke: .75px black;
   }
   
   .layout-image {
@@ -586,7 +592,7 @@ header nav{
   /* animation */
   @keyframes scrollLeft {
     to{
-        left: -200px;
+        left: -100px;
     }
   }
 }
