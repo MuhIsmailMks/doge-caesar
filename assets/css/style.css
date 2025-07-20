@@ -440,10 +440,10 @@ header nav{
 
 /* animation */
 .rotate_animation{
-  animation: rotate 10s linear infinite;
+  animation: rotate_animation 10s linear infinite;
 }
 
-@keyframes rotate {
+@keyframes rotate_animation {
 0%{
   transform: rotate(0deg);
 }
@@ -471,23 +471,7 @@ header nav{
   transform: translatey(0px);
 }
 }
-
-@keyframes rotate {
-  0%{
-    transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
-}
-  100%{
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-}
-}
+ 
  
 @keyframes moveRocket {
   0% {
@@ -525,6 +509,32 @@ header nav{
   }
 }
 
+.rotating_btn {
+  animation: button_animation 1s infinite alternate ease-in-out;
+}
+
+.rotating_btn2 {
+  animation: button_animation2 1s infinite alternate ease-in-out;
+}
+ 
+
+@keyframes button_animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes button_animation2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
 
  
 /* media queries */
