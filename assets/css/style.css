@@ -283,7 +283,7 @@ header nav{
     -ms-border-radius: 6px;
     -o-border-radius: 6px;
     position: absolute;
-    left: calc(200px * 17);
+    left: calc(200px * 18);
     animation: scrollLeft 30s linear infinite;
     -webkit-animation: scrollLeft 30s linear infinite;
     transition: .2s;
@@ -572,7 +572,7 @@ header nav{
   }
   
   .item{ 
-    left: calc(200px * 17);
+    left: calc(200px * 18);
   }
   
   .layout-image {
