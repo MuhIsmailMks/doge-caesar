@@ -39,7 +39,7 @@ document.querySelectorAll(".copy_address").forEach((copybtn) => {
         textSpan.innerHTML = "COPIED";
 
         setTimeout(() => {
-            textSpan.innerHTML = "0x03879Cf551bE277D4CBc0D2C7aD5Be78002B3345";
+            textSpan.innerHTML =  addressText
         }, 2000);
 
         navigator.clipboard.writeText(addressText);
